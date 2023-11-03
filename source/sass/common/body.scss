@@ -1,3 +1,19 @@
-.body p{
-  background-color: red;
+@use "./common/variables.scss";
+
+.body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  min-width: 320px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .body__main {
+    //position: relative;
+    //top: 82px;
+    margin-top: -73px;
+  }
 }

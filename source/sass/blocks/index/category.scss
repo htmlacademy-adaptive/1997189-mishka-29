@@ -1,0 +1,35 @@
+@use "./common/variables.scss";
+
+.category {
+  background-image: url("../img/background-mobile.jpg");
+  background-repeat: no-repeat;
+  //background-size: cover;
+  background-position: center top -18px;
+  background-color: #fafafa;
+  min-height: 320px;
+  border-top: 1px solid red;
+  padding-top: 72px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-mobile@2x.jpg");
+    background-size: 320px 373px;
+    background-position: center top -18px;
+  }
+}
+
+.category__caption {
+  padding: 0 35px;
+  text-align: center;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .category {
+    padding-top: 160px;
+    min-height: 680px;
+    background-image: url("../img/background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-tablet@2x.jpg");
+    }
+  }
+}

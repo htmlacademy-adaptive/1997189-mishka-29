@@ -1,0 +1,53 @@
+@use "./common/variables.scss";
+
+.nav {
+  position: relative;
+}
+
+@media (max-width: variables.$mobile-width-only) {
+  .nav {
+    padding: 22px 0 22px 0;
+  }
+
+  .nav--closed .nav__button {
+    position: absolute;
+    top: 32px;
+    right: 31px;
+  }
+
+  .nav--opened .nav__button {
+    position: absolute;
+    //top: 32px;
+    //right: 31px;
+    top: 26px;
+    right: 28px;
+  }
+}
+
+.nav__link {
+  width: 86px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .nav {
+    //position: relative;
+    //display: grid;
+    //grid-template-columns: 320px 1fr;
+    //display: flex;
+    padding-left: 30px;
+    padding-right: 28px;
+}
+
+
+  .nav__link {
+    width: 114px;
+    height: 46px;
+    position: absolute;
+    top: 22px;
+    left: 49px;
+    flex-shrink: 0;
+  }
+}

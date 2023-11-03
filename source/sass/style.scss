@@ -1,1 +1,13 @@
+@use "./common/variables.scss";
+@use "./common/global.scss";
+@use "./common/fonts.scss";
+@use "./common/visually-hidden.scss";
 @use "./common/body.scss";
+@use "./common/header.scss";
+@use "./common/logo.scss";
+@use "./common/toggle.scss";
+@use "./common/nav.scss";
+@use "./common/nav-list.scss";
+@use "./common/caption.scss";
+@use "./blocks/index/main.scss";
+@use "./blocks/index/category.scss";

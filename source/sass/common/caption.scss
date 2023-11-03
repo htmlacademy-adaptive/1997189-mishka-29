@@ -1,0 +1,16 @@
+@use "./common/variables.scss";
+
+.caption {
+  margin: 0;
+  //padding: 0;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .caption {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
