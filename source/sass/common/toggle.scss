@@ -12,13 +12,11 @@
 @media (max-width: variables.$mobile-width-only) {
   .nav--closed .toggle {
     display: block;
-    // width: 20px;
-    // height: 14px;
     width: 21px;
     height: 23px;
 
     &:hover::before {
-    opacity: 0.6;
+      opacity: 0.6;
     }
 
     &:active::before {
@@ -41,8 +39,6 @@
 
   .nav--opened .toggle {
     display: block;
-    //width: 25px;
-    //height: 21px;
     width: 25px;
     height: 25px;
 

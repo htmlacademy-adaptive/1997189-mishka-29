@@ -17,8 +17,6 @@
 
   .nav--opened .nav__button {
     position: absolute;
-    //top: 32px;
-    //right: 31px;
     top: 26px;
     right: 28px;
   }
@@ -26,6 +24,7 @@
   .nav__logo-wrapper {
     position: relative;
     padding-bottom: 25px;
+
     &::before {
       content: "";
       width: 100%;
@@ -37,7 +36,6 @@
       left: 0;
     }
   }
-
 }
 
 .nav__link {
@@ -75,7 +73,7 @@
       height: 500px;
       left: -32px;
       position: absolute;
-      background-color: #f9f9f9 ;
+      background-color: #f9f9f9;
       bottom: -501px;
     }
   }
@@ -95,17 +93,19 @@
 
   .nav__logo-wrapper {
     grid-column: 3/4;
+
     &::before {
       content: "";
-    width: 100vw;
-    height: 500px;
-    background-color: #f9f9f9;
-    position: absolute;
-    left: calc(100% - 156px);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    top: 100%;
-    z-index: -1;
+      width: 100vw;
+      height: 500px;
+      background-color: #f9f9f9;
+      position: absolute;
+      left: calc(100% - 156px);
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      top: 100%;
+      z-index: -1;
     }
+
     &::after {
       content: "";
       width: 100vw;
@@ -116,7 +116,6 @@
       border-top: 1px solid rgba(0, 0, 0, 0.1);
       top: 100%;
       z-index: -1;
-
     }
   }
 }
