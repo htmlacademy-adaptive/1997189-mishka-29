@@ -5,10 +5,9 @@
   background-repeat: no-repeat;
   //background-size: cover;
   background-position: center top -18px;
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   min-height: 320px;
-  border-top: 1px solid red;
-  padding-top: 72px;
+  padding-top: 70px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background-mobile@2x.jpg");
@@ -24,12 +23,25 @@
 
 @media (min-width: variables.$tablet-width) {
   .category {
-    padding-top: 160px;
+    padding-top: 85px;
     min-height: 680px;
     background-image: url("../img/background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-tablet@2x.jpg");
     }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .category {
+    background-image: url("../img/background-desktop.jpg");
+    background-position: center top -70px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-desktop@2x.jpg");
+      background-size: 1150px 746px;
+    }
+
   }
 }

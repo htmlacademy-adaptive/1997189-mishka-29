@@ -9,13 +9,13 @@
 </head>
 
 <body class="page__body body">
-
     <header class="body__header header">
+      <div class="header__wrapper">
       <nav class="header__nav nav">
-
         <button type="button" class="nav__button toggle">
           <span class="visually-hidden">Кнопка закрытия,открытия меню.</span>
         </button>
+        <div class="nav__logo-wrapper">
         <a class="nav__link logo">
           <picture>
               <source media="(min-width:1150px)" srcset="img/logo-desktop.svg" width="149" height="72">
@@ -24,14 +24,16 @@
                 alt="Логотип компании Мишка.">
             </picture>
         </a>
-        <ul class="nav__list nav-list">
-
+      </div>
+        <ul class="nav__list nav-list nav-list--additional">
           <li class="nav-list__item nav-list__item--catalog">
             <a class="nav-list__link  " href="">Каталог товаров</a>
           </li>
           <li class="nav-list__item nav-list__item--knitting">
             <a class="nav-list__link " href="">Вязание на заказ</a>
           </li>
+          </ul>
+          <ul class="nav__list nav-list nav-list--cart">
           <li class="nav-list__item nav-list__item--search">
             <a class="nav-list__link nav-list__link--search" href="#">
               <span class="nav-list__row">Поиск по сайту</span>
@@ -42,10 +44,8 @@
               <span class="nav-list__row">Корзина: пока пуста</span>
               </a>
           </li>
-          <!--<li class="nav-list__item nav-list__item--additional">
-            <a class="nav-list__link" href="#"> Новые поступления</a>
-          </li>-->
-
+          </ul>
+        <ul class="nav__list nav-list nav-list--delivery">
           <li class="nav-list__item nav-list__item--desktop">
             <a class="nav-list__link" href="#">Новые поступления</a>
           </li>
@@ -56,8 +56,8 @@
             <a class="nav-list__link " href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
-        </ul>
       </nav>
+    </div>
     </header>
     <main class="body__main main">
       <h class="visually-hidden">Интернет-магазин Мишка.</h>
