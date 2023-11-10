@@ -1,0 +1,21 @@
+.card-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 99px 1fr;
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.card-list__desc {
+  margin: 0;
+  padding: 12px 0 12px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.card-list__term {
+  border-bottom: 1px solid #ededed;
+  padding: 12px 0 12px 0;
+}

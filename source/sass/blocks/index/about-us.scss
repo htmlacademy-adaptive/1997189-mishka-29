@@ -1,0 +1,27 @@
+@use "./common/variables.scss";
+
+.about-us {
+  padding: 32px 30px 0 31px;
+}
+
+.about-us__caption {
+  margin-bottom: 26px;
+}
+
+@media (min-width: variables.$tablet-width) {
+.about-us {
+  padding: 55px 50px 28px;
+  max-width: 800px;
+}
+
+.about-us__caption {
+  margin-bottom: 41px;
+}
+}
+
+@media (min-width: variables.$desktop-width) {
+  .about-us {
+    padding-top: 68px;
+    padding-bottom: 34px;
+  }
+}

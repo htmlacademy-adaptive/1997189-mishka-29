@@ -1,0 +1,47 @@
+@use "./common/variables.scss";
+
+.map {
+  position: relative;
+}
+
+.map__box {
+width: 100%;
+}
+
+.map__nojs-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.map__image {
+  display: block;
+  width: 100%;
+  height: 454px;
+  object-fit: cover;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .map__image {
+    height: 457px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+
+  .map__image {
+    height: 457px;
+  }
+
+  .map__nojs-wrapper {
+    height: 457px;
+    width: 527px;
+  }
+
+  .map__box {
+    height: 457px;
+    width: 527px;
+  }
+}

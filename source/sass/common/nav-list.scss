@@ -20,6 +20,10 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  &:focus-visible {
+    outline-offset: -1px;
+  }
 }
 
 .nav-list__link--search {

@@ -19,17 +19,27 @@
 .category__caption {
   padding: 0 35px;
   text-align: center;
+  margin-bottom: 120px;
+  min-height: 90px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .category {
-    padding-top: 85px;
+    //position: relative;
     min-height: 680px;
     background-image: url("../img/background-tablet.jpg");
+    //padding: 85px 50px 0;
+    background-position: center top -71px;
+    padding-top: unset;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-tablet@2x.jpg");
+      background-size: 768px 746px;
     }
+  }
+
+  .category__caption {
+    margin-bottom: 370px;
   }
 }
 
@@ -37,10 +47,21 @@
   .category {
     background-image: url("../img/background-desktop.jpg");
     background-position: center top -70px;
+    padding-top: unset;
+    min-height: 671px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-desktop@2x.jpg");
       background-size: 1150px 746px;
     }
   }
-}
+
+  .category__caption {
+    margin-bottom: 356px;
+  }
+
+  .category__list {
+    margin: 0 auto;
+    }
+  }
+

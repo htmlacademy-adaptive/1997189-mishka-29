@@ -2,23 +2,40 @@
 
 .caption {
   margin: 0;
-  //padding: 0;
-  font-size: 27px;
   font-weight: 700;
-  line-height: 30px;
+  //padding: 0;
+  &--big {
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &--middle {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
   .caption {
-    font-size: 43px;
-    line-height: 50px;
+    &--big {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &--middle {
+      font-size: 43px;
+      line-height: 50px;
+    }
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .caption {
-    font-size: 53px;
-    font-weight: 700;
-    line-height: 57px;
+    &--big,
+    &--middle {
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 }

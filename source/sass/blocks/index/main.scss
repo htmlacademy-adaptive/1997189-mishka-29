@@ -1,3 +1,17 @@
-.main {
-  //padding-top: 84px;
+@use "./common/variables.scss";
+
+@media (min-width: variables.$tablet-width) {
+  .main__about-us {
+    margin: 0 auto;
+  }
+
+  .main__category-wrapper {
+    padding: 85px 50px 0;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main__contacts {
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,128 @@
+@use "./common/variables.scss";
+
+.slider {
+  //padding: 32px 30px 45px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/icons/sprite.svg#zigzag-line-desktop");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    //background-size: 100% 6px;
+    //background-position: ;
+  }
+}
+
+.slider__wrapper {
+  padding: 32px 30px 45px;
+}
+
+
+.slider__button {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.slider__button-wrapper {
+  display: flex;
+  margin-bottom: 38px;
+  justify-content: center;
+}
+
+.slider__button-left {
+  width: 129px;
+  height: 52px;
+  display: inline-block;
+  background-image: url("../img/icons/sprite.svg#arrow-left");
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+  border-top: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  border-right: none;
+  padding: 0;
+  background-position: center;
+}
+
+.slider__button-right {
+  width: 129px;
+  height: 52px;
+  display: inline-block;
+  background-image: url("../img/icons/sprite.svg#arrow-left");
+  background-repeat: no-repeat;
+  transform: rotate( 180deg);
+  background-size: 50px 26px;
+  border-top: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding: 0;
+  background-position: center;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .slider {
+    padding-bottom: 68px;
+    &::after {
+      bottom: -5px;
+    }
+  }
+
+  .slider__wrapper {
+    padding: 79px 50px 45px;
+
+    background-image: url("../img/review-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-tablet@2x.jpg");
+      background-size: 350px 100%;
+    }
+  }
+
+  .slider__button {
+    width: 175px;
+    margin-left: auto;
+  }
+
+  .slider__button-wrapper {
+    display: flex;
+    column-gap: 37px;
+    margin-bottom: unset;
+    justify-content: center;
+    /* grid-column: 2/3; */
+    position: absolute;
+    bottom: 32px;
+    right: 19px;
+  }
+
+  .slider__button-left,
+  .slider__button-right {
+    width: 50px;
+    height: 26px;
+    border: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .slider {
+    padding-bottom: 90px;
+    &::after {
+      height: 23px;
+    }
+  }
+
+  .slider__wrapper {
+    padding: 79px 0 76px 174px;
+  }
+}

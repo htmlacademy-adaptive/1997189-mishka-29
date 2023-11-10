@@ -1,5 +1,6 @@
 @use "./common/variables.scss";
 @use "./common/global.scss";
+@use "./common/button.scss";
 @use "./common/fonts.scss";
 @use "./common/visually-hidden.scss";
 @use "./common/body.scss";
@@ -11,3 +12,18 @@
 @use "./common/caption.scss";
 @use "./blocks/index/main.scss";
 @use "./blocks/index/category.scss";
+@use "./blocks/index/category-list.scss";
+@use "./blocks/index/weekly-product.scss";
+@use "./blocks/index/card-about.scss";
+@use "./blocks/index/card-list.scss";
+@use "./blocks/index/card.scss";
+@use "./blocks/index/img-link.scss";
+@use "./blocks/index/price.scss";
+@use "./blocks/index/about-us.scss";
+@use "./blocks/index/about-list.scss";
+@use "./blocks/index/slider.scss";
+@use "./blocks/index/slider-text.scss";
+@use "./blocks/index/contacts.scss";
+@use "./blocks/index/email.scss";
+@use "./blocks/index/address.scss";
+@use "./blocks/index/map.scss";

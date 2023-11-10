@@ -1,0 +1,29 @@
+@use "./common/variables.scss";
+
+.price__text {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 23px;
+  font-weight: 700;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .price__text {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .price {
+    width: 292px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .price__text {
+    margin-bottom: 35px;
+  }
+}
+

@@ -1,0 +1,141 @@
+@use "./common/variables.scss";
+
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-list__item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 26px;
+  padding-top: 57px;
+
+
+  &::before {
+    content: "";
+    width: 46px;
+    height: 40px;
+    display: block;
+  }
+
+  &--icon1 {
+    padding-right: 63px;
+    position: relative;
+    &::before {
+      background-image: url("../img/icons/sprite.svg#icon1");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &--icon2 {
+    position: relative;
+    &::before {
+      background-image: url("../img/icons/sprite.svg#icon2");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: -3px;
+      left: 0;
+    }
+  }
+
+  &--icon3 {
+    position: relative;
+    &::before {
+      background-image: url("../img/icons/sprite.svg#icon3");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 2px;
+      left: -1;
+      background-size: 33px;
+    }
+  }
+
+  &--icon4 {
+    position: relative;
+    padding-right: 35px;
+    &::before {
+      background-image: url("../img/icons/sprite.svg#icon4");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 2px;
+      left: -4px;
+      background-size: 33px;
+    }
+  }
+
+  &--icon5 {
+    position: relative;
+    &::before {
+      width: 55px;
+      background-image: url("../img/icons/sprite.svg#icon5");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: -2px;
+      left: -7px;
+    }
+  }
+
+  &--icon6 {
+    position: relative;
+    padding-right: 35px;
+    &::before {
+      background-image: url("../img/icons/sprite.svg#icon6");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: -5px;
+      top: 0;
+      background-size: 35px;
+    }
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .about-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+  }
+
+  .about-list__item {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 54px;
+    &--icon1 {
+      padding-right: 103px;
+    }
+
+    &--icon6 {
+      padding-right: 39px;
+    }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .about-list__item {
+    padding-top: 56px;
+    &--icon1 {
+      padding-right: 119px;
+    }
+
+    &--icon4 {
+      padding-right: 48px;
+    }
+
+    &--icon6 {
+      padding-right: 55px;
+    }
+  }
+}
