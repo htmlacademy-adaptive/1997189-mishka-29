@@ -25,7 +25,7 @@
 
 @media (min-width: variables.$tablet-width) {
   .category {
-    //position: relative;
+    position: relative;
     min-height: 680px;
     background-image: url("../img/background-tablet.jpg");
     //padding: 85px 50px 0;
@@ -47,7 +47,7 @@
       background-repeat: repeat-x;
       position: absolute;
       left: 0;
-      bottom: -15px;
+      bottom: -1px;
       background-size: 100%;
     }
   }
