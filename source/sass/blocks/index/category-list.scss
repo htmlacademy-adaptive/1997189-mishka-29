@@ -112,19 +112,7 @@
     position: relative;
     padding-left: 50px;
     padding-right: 50px;
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      //max-width: 1150px;
-      height: 34px;
-      background-image: url("../img/icons/sprite.svg#zigzag-fill-desktop");
-      background-repeat: repeat-x;
-      position: absolute;
-      left: 0;
-      bottom: -15px;
-      background-size: 100%;
-    }
+
   }
 
   .category-list__link {
@@ -155,7 +143,7 @@
 @media (min-width: variables.$desktop-width) {
   .category-list {
     max-width: 1150px;
-    overflow: hidden;
+    //overflow: hidden;
 
     &::after {
       height: 34px;

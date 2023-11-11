@@ -36,6 +36,20 @@
       background-image: url("../img/background-tablet@2x.jpg");
       background-size: 768px 746px;
     }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      //max-width: 1150px;
+      height: 34px;
+      background-image: url("../img/icons/sprite.svg#zigzag-fill-desktop");
+      background-repeat: repeat-x;
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      background-size: 100%;
+    }
   }
 
   .category__caption {

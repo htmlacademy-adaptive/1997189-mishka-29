@@ -81,7 +81,7 @@
     display: grid;
     grid-template-columns: 175px 398px 527px;
     grid-template-rows: minmax(172px, auto) minmax(224px, auto) minmax(52px, auto);
-    width: 1150px;
+    max-width: 1150px;
     align-items: start;
     &::before {
       left: 117px;
