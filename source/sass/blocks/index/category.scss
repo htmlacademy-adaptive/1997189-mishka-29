@@ -68,6 +68,10 @@
       background-image: url("../img/background-desktop@2x.jpg");
       background-size: 1150px 746px;
     }
+
+    &::after {
+      bottom: -20px;
+    }
   }
 
   .category__caption {
