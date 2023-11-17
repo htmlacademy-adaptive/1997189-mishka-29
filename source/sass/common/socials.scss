@@ -1,3 +1,5 @@
+@use "./common/variables.scss";
+
 .socials {
   list-style-type: none;
   padding: 0;
@@ -45,4 +47,17 @@
     mask-position: center;
     background-color: #231F20;
   }
+}
+
+@media (min-width: variables.$tablet-width) {
+.socials {
+  border-bottom: none;
+  padding: unset;
+}
+}
+
+@media (min-width: variables.$desktop-width) {
+.socials {
+  padding: 6px 0 0 0;
+}
 }

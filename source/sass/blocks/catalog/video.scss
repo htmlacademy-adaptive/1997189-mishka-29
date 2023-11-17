@@ -1,0 +1,158 @@
+@use "./common/variables.scss";
+
+.video {
+  padding: 0 30px;
+}
+
+.video__wrapper {
+  position: relative;
+  margin-bottom: 35px;
+  &::before {
+    content: "";
+    width: 100px;
+    height: 77px;
+    display: block;
+    background-image: url("../img/icons/sprite.svg#play");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 38px);
+  }
+}
+
+.video__img {
+  display: block;
+  width: 100%;
+}
+
+
+.video__caption {
+  margin-left: 91px;
+  position: relative;
+  padding-top: 21px;
+  margin-bottom: 27px;
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/icons/sprite.svg#video-icon");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: -58px;
+    top: 33px;
+  }
+}
+
+.video__text {
+  color: #444444;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 43px;
+  padding: 0 31px;
+}
+
+.video__link {
+  display: block;
+  border: 1px solid #ededed;
+  color: inherit;
+  cursor: pointer;
+  padding-bottom: 28px;
+
+  &:hover {
+    border: 1px solid #ededed;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    border: 1px solid #ededed;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.video__button {
+  margin: 0 33px 5px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .video {
+    padding: 0 50px;
+  }
+  .video__link {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 45px;
+  }
+
+  .video__caption {
+    grid-row: 2/3;
+    padding-top: 6px;
+    margin-left: 105px;
+    margin-bottom: 24px;
+
+    &::before {
+      left: -65px;
+      top: 5px;
+    }
+  }
+
+  .video__text {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 39px;
+    margin: 0 0 40px;
+  }
+
+  .video__button {
+    margin: 0 41px;
+  }
+
+  .video__wrapper {
+    &::before {
+      top: calc(50% - 40px);
+    }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .video__link {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(171px, auto) minmax(171px, auto) auto;
+    align-items: start;
+  }
+
+  .video__wrapper {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 683px;
+  }
+
+  .video__caption {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 96px;
+    margin-left: 78px;
+    margin-bottom: unset;
+    max-width: 200px;
+
+    &::before {
+      left: 0;
+      top: 46px;
+    }
+  }
+
+  .video__text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 0 53px 0 78px;
+  }
+
+  .video__button {
+    grid-column: 2/3;
+    width: 230px;
+    margin-left: 79px;
+}
+  }
+

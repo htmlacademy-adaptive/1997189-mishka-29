@@ -110,8 +110,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
+   // padding-left: 50px;
+   // padding-right: 50px;
+
+    /*&::after {
+      content: "";
+      display: block;
+      width: 100%;
+      //max-width: 1150px;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      background-size: 100% 24px;
+    }*/
 
   }
 
@@ -145,11 +159,10 @@
     max-width: 1150px;
     //overflow: hidden;
 
-    &::after {
+   /* &::after {
       height: 34px;
-      left: 11px;
-      bottom: -18px;
-      background-size: 109%;
-    }
+      background-size: 100% 34px;
+      bottom: -7px;
+    }*/
   }
 }

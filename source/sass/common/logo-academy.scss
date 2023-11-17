@@ -1,0 +1,27 @@
+@use "./common/variables.scss";
+
+.logo-academy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 31px;
+  padding-left: 38px;
+  padding-right: 38px;
+  align-items: start;
+}
+
+
+.logo-academy__text {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  padding-top: 6px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .logo-academy {
+    padding: unset;
+    column-gap: 26px;
+  }
+}

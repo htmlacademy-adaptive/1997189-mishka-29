@@ -1,0 +1,30 @@
+@use "./common/variables.scss";
+
+.img-card {
+  display: block;
+  min-height: 195px;
+  min-width: 260px;
+  //background-color: #e9e9e9;
+}
+
+.img-card__img {
+  display: block;
+  //margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .img-card {
+    width: 334px;
+    min-height: 334px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .img-card {
+    width: 314px;
+    height: 462px;
+  }
+}

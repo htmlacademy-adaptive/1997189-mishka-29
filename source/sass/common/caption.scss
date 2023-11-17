@@ -14,6 +14,13 @@
     font-size: 25px;
     line-height: 30px;
   }
+
+  &--catalog {
+    font-size: 17px;
+    line-height: 24px;
+    //margin-bottom: 5px;
+    //text-align: center;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -26,6 +33,12 @@
     &--middle {
       font-size: 43px;
       line-height: 50px;
+    }
+
+    &--catalog {
+      font-size: 20px;
+      line-height: 24px;
+      //text-align: left;
     }
   }
 }

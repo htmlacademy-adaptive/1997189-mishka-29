@@ -12,6 +12,7 @@
 
 .email__text {
   //position: relative;
+    cursor: pointer;
 
   &::after {
     content: "";

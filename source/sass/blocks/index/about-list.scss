@@ -106,7 +106,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-auto-flow: column;
+    //grid-auto-flow: column;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
   }
 
   .about-list__item {
@@ -115,6 +119,20 @@
     margin-bottom: 54px;
     &--icon1 {
       padding-right: 103px;
+      grid-area: a;
+    }
+
+
+    &--icon2 {
+      grid-area: c;
+    }
+
+    &--icon3 {
+      grid-area: e;
+    }
+
+    &--icon4 {
+      grid-area: b;
     }
 
     &--icon6 {

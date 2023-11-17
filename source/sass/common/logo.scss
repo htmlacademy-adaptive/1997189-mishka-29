@@ -1,5 +1,9 @@
 @use "./common/variables.scss";
 
+.logo {
+  cursor: pointer;
+}
+
 .logo__img {
   display: block;
 }

@@ -1,5 +1,6 @@
 @use "./common/variables.scss";
 @use "./common/global.scss";
+@use "./common/page.scss";
 @use "./common/button.scss";
 @use "./common/fonts.scss";
 @use "./common/visually-hidden.scss";
@@ -11,6 +12,7 @@
 @use "./common/nav-list.scss";
 @use "./common/footer.scss";
 @use "./common/footer-logo.scss";
+@use "./common/logo-academy.scss";
 @use "./common/socials.scss";
 @use "./common/caption.scss";
 @use "./blocks/index/main.scss";
@@ -29,5 +31,7 @@
 @use "./blocks/index/contacts.scss";
 @use "./blocks/index/email.scss";
 @use "./blocks/index/address.scss";
-@use "./blocks/index/map.scss";
-
+@use "./blocks/catalog/catalog.scss";
+@use "./blocks/catalog/catalog-card.scss";
+@use "./blocks/catalog/img-card.scss";
+@use "./blocks/catalog/video.scss";
