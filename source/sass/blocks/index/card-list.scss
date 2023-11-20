@@ -1,3 +1,5 @@
+@use "./common/variables.scss";
+
 .card-list {
   margin: 0;
   padding: 0;
@@ -18,4 +20,11 @@
 .card-list__term {
   border-bottom: 1px solid #ededed;
   padding: 12px 0 12px 0;
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .card-list {
+    max-width: 292px;
+  }
 }

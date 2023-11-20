@@ -1,0 +1,70 @@
+@use "./common/variables.scss";
+
+.radio {
+  padding-left: 59px;
+  min-height: 40px;
+}
+
+.radio__label {
+  position: relative;
+  min-height: 40px;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #444444;
+    position: absolute;
+    left: -59px;
+    top: -2px;
+  }
+
+  .radio__input:checked ~ &::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #61d1ba;
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    left: -47px;
+  }
+}
+
+
+.radio__text {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .radio {
+    padding-left: 77px;
+    padding-top: 14px;
+  }
+
+  .radio__text {
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  .radio__label {
+    &::before {
+      width: 50px;
+      height: 49px;
+      left: -77px;
+      top: -14px;
+    }
+
+    .radio__input:checked ~ &::after {
+      width: 20px;
+      height: 20px;
+      top: 0;
+      left: -62px;
+  }
+}
+}

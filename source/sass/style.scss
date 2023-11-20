@@ -16,6 +16,7 @@
 @use "./common/socials.scss";
 @use "./common/caption.scss";
 @use "./blocks/index/main.scss";
+@use "./blocks/index/map.scss";
 @use "./blocks/index/category.scss";
 @use "./blocks/index/category-list.scss";
 @use "./blocks/index/weekly-product.scss";
@@ -35,3 +36,9 @@
 @use "./blocks/catalog/catalog-card.scss";
 @use "./blocks/catalog/img-card.scss";
 @use "./blocks/catalog/video.scss";
+@use "./blocks/form/form-text.scss";
+@use "./blocks/form/form-group.scss";
+@use "./blocks/form/form-caption.scss";
+@use "./blocks/form/type.scss";
+@use "./blocks/form/radio.scss";
+@use "./blocks/form/form.scss";

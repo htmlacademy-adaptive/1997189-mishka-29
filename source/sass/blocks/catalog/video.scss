@@ -79,7 +79,10 @@
 @media (min-width: variables.$tablet-width) {
   .video {
     padding: 0 50px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
+
   .video__link {
     display: grid;
     grid-template-columns: 1fr;
@@ -117,16 +120,22 @@
 }
 
 @media (min-width: variables.$desktop-width) {
+  .video {
+    margin-bottom: 104px;
+  }
+
   .video__link {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(171px, auto) minmax(171px, auto) auto;
     align-items: start;
+    padding-bottom: unset;
   }
 
   .video__wrapper {
     grid-column: 1/2;
     grid-row: 1/4;
     width: 683px;
+    margin-bottom: unset;
   }
 
   .video__caption {

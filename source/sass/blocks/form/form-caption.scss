@@ -1,0 +1,40 @@
+@use "./common/variables.scss";
+
+.form-caption {
+  color: variables.$color-primary;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  padding-left: unset;
+  padding-right: unset;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #63d1bb;
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 1px);
+    left: 0;
+  }
+}
+
+.form-caption__text {
+  display: inline-block;
+  padding-right: 20px;
+  background-color: #ffffff;
+}
+
+@media (min-width: variables.$tablet-width) {
+.form-caption {
+  &::after {
+    display: none;
+  }
+}
+}

@@ -1,0 +1,60 @@
+@use "./common/variables.scss";
+
+.type {
+  margin: 0;
+  padding: 0 30px;
+  border:none;
+}
+
+.type__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.type__caption {
+  margin-bottom: 31px;
+}
+
+.type__item {
+  margin-bottom: 21px;
+  &:nth-child(2) > .radio__label::before {
+    top: -10px;
+  }
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .type {
+    padding: 0 50px;
+  }
+
+  .type__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .type__caption {
+    width: 170px;
+    padding-top: 15px;
+  }
+
+  .type__item {
+    margin-bottom: 40px;
+
+    &:nth-child(2) > .radio__input:checked + .radio__label::after {
+      top: 5px;
+    }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .type {
+    padding: 0 111px 25px;
+    max-width: 1150px;
+  }
+
+  .type__caption {
+    width: 115px;
+  }
+}
