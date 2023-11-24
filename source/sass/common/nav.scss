@@ -7,12 +7,22 @@
 @media (max-width: variables.$mobile-width-only) {
   .nav {
     padding: 22px 0 0;
+    box-shadow: 0 1px 0 0 #ecececec, 0 1px 0 0 #ecececec inset;
   }
 
   .nav--closed .nav__button {
     position: absolute;
-    top: 34px;
+    top: 32px;
     right: 30px;
+  }
+
+  .nav--opened {
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 
   .nav--opened .nav__button {
@@ -23,18 +33,8 @@
 
   .nav__logo-wrapper {
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
 
-    &::before {
-      content: "";
-      width: 100%;
-      height: 1px;
-      background-color: rgba(0, 0, 0, 0.1);
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
     &--additional {
       &::before {
         background-color: #f1f1f1;
@@ -49,6 +49,7 @@
     margin: 0 auto;
   }
 }
+
 @media (min-width: variables.$tablet-width) {
   .nav {
     display: grid;
@@ -62,7 +63,7 @@
     height: 46px;
     position: absolute;
     top: 22px;
-    left: 19px;
+    left: 20px;
     flex-shrink: 0;
   }
 
@@ -113,6 +114,7 @@
       top: 100%;
       z-index: -1;
     }
+
     &--additional::before {
       background-color: #f1f1f1;
     }
@@ -128,6 +130,7 @@
       top: 100%;
       z-index: -1;
     }
+
     &--additional::after {
       background-color: #f1f1f1;
     }

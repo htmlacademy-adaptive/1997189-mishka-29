@@ -8,7 +8,7 @@
   padding-bottom: 31px;
   padding-left: 38px;
   padding-right: 38px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 
@@ -17,11 +17,22 @@
   font-weight: 700;
   line-height: 18px;
   padding-top: 6px;
+  max-width: 120px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .logo-academy {
     padding: unset;
-    column-gap: 26px;
+    column-gap: 34px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .logo-academy {
+    column-gap: 37px;
+  }
+
+  .logo-academy__text {
+    padding-top: 7px;
   }
 }

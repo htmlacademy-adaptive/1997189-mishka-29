@@ -7,6 +7,7 @@
 .video__wrapper {
   position: relative;
   margin-bottom: 35px;
+
   &::before {
     content: "";
     width: 100px;
@@ -31,6 +32,7 @@
   position: relative;
   padding-top: 21px;
   margin-bottom: 27px;
+
   &::before {
     content: "";
     display: block;
@@ -50,7 +52,7 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0 0 43px;
+  margin: 0 0 41px;
   padding: 0 31px;
 }
 
@@ -78,7 +80,7 @@
 
 @media (min-width: variables.$tablet-width) {
   .video {
-    padding: 0 50px;
+    padding: 0 50px 65px;
     max-width: 1150px;
     margin: 0 auto;
   }
@@ -121,7 +123,8 @@
 
 @media (min-width: variables.$desktop-width) {
   .video {
-    margin-bottom: 104px;
+    margin-bottom: 103px;
+    padding-bottom: unset;
   }
 
   .video__link {
@@ -162,6 +165,5 @@
     grid-column: 2/3;
     width: 230px;
     margin-left: 79px;
-}
   }
-
+}

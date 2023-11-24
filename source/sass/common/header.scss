@@ -1,5 +1,11 @@
 @use "./common/variables.scss";
 
+@media (max-width: variables.$mobile-width-only) {
+  .header__wrapper {
+    min-height: 82px;
+  }
+}
+
 @media (min-width: variables.$tablet-width) {
   .header {
     overflow: hidden;

@@ -11,6 +11,7 @@
 .slider-text__blockquote {
   margin: 0;
   padding: 15px 0;
+  margin-bottom: 17px;
 }
 
 .slider-text__author {
@@ -19,16 +20,14 @@
   font-weight: 700;
   line-height: 24px;
   font-style: normal;
+  display: block;
 }
 
 .slider-text__email {
   color: #444444;
   font-weight: 400;
   line-height: 30px;
-}
-
-.slider-text__blockquote {
-  margin-bottom: 17px;
+  display: block;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -47,7 +46,6 @@
   .slider-text__author {
     display: block;
     font-size: 18px;
-    //font-weight: 700;
     line-height: 24px;
     max-width: 284px;
   }

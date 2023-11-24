@@ -11,7 +11,7 @@
 .nav-list__link {
   color: inherit;
   display: inline-block;
-  padding: 27px 48px 28px 30px;
+  padding: 27px 48px 27px 30px;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -56,7 +56,6 @@
 .nav-list__link--cart {
   padding-left: 64px;
   position: relative;
-
 
   &::before {
     content: "";
@@ -109,7 +108,7 @@
       padding: 0;
       position: relative;
       width: 100%;
-      top: -1px;
+      top: 0;
       left: 0;
       background-color: #ffffff;
     }
@@ -212,7 +211,8 @@
       grid-column: 2/3;
 
       &::before {
-        left: 35px;
+        left: 33px;
+        top: 33px;
       }
     }
   }
@@ -244,11 +244,6 @@
 
   .nav-list__item {
     line-height: 24px;
-    padding-top: 34px;
-    padding-bottom: 30px;
-    padding-left: 19px;
-    padding-right: 19px;
-    max-width: unset;
     font-size: 17px;
     max-width: 269px;
 
@@ -260,7 +255,6 @@
     &--desktop {
       display: inherit;
       font-size: 15px;
-      padding-top: 18px;
     }
 
     &--search {
@@ -271,7 +265,6 @@
     &--delivery {
       margin-left: auto;
       font-size: 15px;
-      padding-top: 18px;
     }
 
     &--cart {
@@ -280,21 +273,32 @@
   }
 
   .nav-list__link {
-    padding: 0;
+    padding-top: 34px;
+    padding-bottom: 30px;
+    padding-left: 19px;
+    padding-right: 19px;
+
+    .nav-list__item--desktop &,
+    .nav-list__item--delivery & {
+      padding-top: 19px;
+    }
 
     &--search {
+      padding: 42px 40px;
+
       &::before {
-        top: -14px;
-        left: 12px;
+        top: 37px;
+        left: 32px;
       }
     }
 
     &--cart {
-      padding-left: 63px;
+      padding-left: 84px;
+      padding-right: 17px;
 
       &::before {
-        left: 11px;
-        top: 0;
+        left: 34px;
+        top: 33px;
       }
     }
   }

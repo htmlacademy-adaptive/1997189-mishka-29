@@ -5,4 +5,5 @@ nav.classList.add('nav--closed');
 menuButton.addEventListener('click',() => {
   nav.classList.toggle('nav--opened');
   nav.classList.toggle('nav--closed');
-  });
+  }
+);

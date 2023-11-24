@@ -1,8 +1,9 @@
 @use "./common/variables.scss";
+
 .img-link {
-display: block;
-height: 315px;
-background-color: #f1f1f1;
+  display: block;
+  height: 315px;
+  background-color: #f1f1f1;
 }
 
 .img-link__img {
@@ -12,7 +13,7 @@ background-color: #f1f1f1;
   max-height: 100%;
 }
 
-@media(min-width: variables.$tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .img-link {
     height: 404px;
   }

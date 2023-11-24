@@ -6,38 +6,26 @@
   }
 
   .main__category-wrapper {
-    padding: 85px 50px 0;
+    padding: 83px 50px 0;
     position: relative;
     max-width: 1150px;
     margin: 0 auto;
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-
-      height: 24px;
-      background-image: url("../img/zigzag-fill-desktop.svg");
-      background-repeat: repeat-x;
-      position: absolute;
-      left: 0;
-      bottom: -15px;
-      background-size: 100% 24px;
-    }
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .main__contacts {
-    margin: 0 auto 53px;
+    margin: 0 auto 47px;
   }
 
   .main__category-wrapper {
     overflow: hidden;
+
     &::after {
       height: 38px;
       background-size: 109% 36px;
       bottom: -23px;
       left: 10px;
+    }
   }
-}
 }

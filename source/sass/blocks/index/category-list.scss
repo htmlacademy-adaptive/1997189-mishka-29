@@ -14,9 +14,10 @@
 
     &:active {
       background-color: #59d6bd;
-      &::before {
-        opacity: 0.3;
-      }
+    }
+
+    &:active::before {
+      opacity: 0.3;
     }
   }
 
@@ -29,10 +30,10 @@
 
     &:active {
       background-color: #47c2af;
+    }
 
-      &::before {
-        opacity: 0.3;
-      }
+    &:active::before {
+      opacity: 0.3;
     }
   }
 
@@ -47,6 +48,7 @@
 
   &--interior {
     position: relative;
+
     &::before {
       content: "";
       display: block;
@@ -61,8 +63,10 @@
       cursor: pointer;
     }
   }
+
   &--toys {
     position: relative;
+
     &::before {
       content: "";
       display: block;
@@ -110,23 +114,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-   // padding-left: 50px;
-   // padding-right: 50px;
-
-    /*&::after {
-      content: "";
-      display: block;
-      width: 100%;
-      //max-width: 1150px;
-      height: 24px;
-      background-image: url("../img/zigzag-fill-desktop.svg");
-      background-repeat: repeat-x;
-      position: absolute;
-      left: 0;
-      bottom: -15px;
-      background-size: 100% 24px;
-    }*/
-
   }
 
   .category-list__link {
@@ -136,6 +123,7 @@
   .category-list__heading {
     font-size: 20px;
     line-height: 30px;
+    min-height: 54px;
   }
 
   .category-list__item {
@@ -157,12 +145,13 @@
 @media (min-width: variables.$desktop-width) {
   .category-list {
     max-width: 1150px;
-    //overflow: hidden;
+  }
 
-   /* &::after {
-      height: 34px;
-      background-size: 100% 34px;
-      bottom: -7px;
-    }*/
+  .category-list__link {
+    padding: 26px 36px;
+  }
+
+  .category-list__item {
+    min-height: 118px;
   }
 }

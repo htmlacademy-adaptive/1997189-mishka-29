@@ -1,7 +1,6 @@
 @use "./common/variables.scss";
 
 .slider {
-  //padding: 32px 30px 45px;
   position: relative;
 
   &::after {
@@ -14,8 +13,6 @@
     position: absolute;
     bottom: -14px;
     left: 0;
-    //background-size: 100% 6px;
-    //background-position: ;
   }
 }
 
@@ -56,7 +53,7 @@
   display: inline-block;
   background-image: url("../img/icons/sprite.svg#arrow-left");
   background-repeat: no-repeat;
-  transform: rotate( 180deg);
+  transform: rotate(180deg);
   background-size: 50px 26px;
   border-top: 1px solid #ededed;
   border-left: 1px solid #ededed;
@@ -69,9 +66,14 @@
 @media (min-width: variables.$tablet-width) {
   .slider {
     padding-bottom: 68px;
+
     &::after {
       bottom: -5px;
     }
+  }
+
+  .slider__caption {
+    margin-top: 4px;
   }
 
   .slider__wrapper {
@@ -82,7 +84,6 @@
     background-size: 350px 100%;
     max-width: 1050px;
     margin: 0 auto;
-
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review-tablet@2x.jpg");
@@ -100,9 +101,8 @@
     column-gap: 37px;
     margin-bottom: unset;
     justify-content: center;
-    /* grid-column: 2/3; */
     position: absolute;
-    bottom: 32px;
+    bottom: 34px;
     right: 19px;
   }
 
@@ -116,7 +116,8 @@
 
 @media (min-width: variables.$desktop-width) {
   .slider {
-    padding-bottom: 90px;
+    padding-bottom: 85px;
+
     &::after {
       height: 23px;
     }
@@ -124,5 +125,13 @@
 
   .slider__wrapper {
     padding: 79px 0 76px 174px;
+  }
+
+  .slider__caption {
+    margin-top: unset;
+  }
+
+  .slider__button-wrapper {
+    bottom: 35px;
   }
 }

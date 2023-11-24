@@ -2,19 +2,18 @@
 
 .socials {
   list-style-type: none;
-  padding: 0;
   margin: 0;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 24px 20px 31px;
+  padding: 28px 20px 31px;
   column-gap: 29px;
 }
 
-
 .socials__link {
   display: block;
+
   &--vk::before {
     content: "";
     display: block;
@@ -23,7 +22,7 @@
     mask-image: url("../img/icons/sprite.svg#vkontakte");
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: #231F20;
+    background-color: #231f20;
   }
 
   &--youtube::before {
@@ -34,7 +33,7 @@
     mask-image: url("../img/icons/sprite.svg#youtube");
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: #231F20;
+    background-color: #231f20;
   }
 
   &--telegram::before {
@@ -45,19 +44,20 @@
     mask-image: url("../img/icons/sprite.svg#telegram");
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: #231F20;
+    background-color: #231f20;
   }
 }
 
 @media (min-width: variables.$tablet-width) {
-.socials {
-  border-bottom: none;
-  padding: unset;
-}
+  .socials {
+    border-bottom: none;
+    padding: unset;
+    padding-top: 5px;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
-.socials {
-  padding: 6px 0 0 0;
-}
+  .socials {
+    padding: 6px 0 0 0;
+  }
 }

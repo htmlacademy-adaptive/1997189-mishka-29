@@ -13,7 +13,6 @@
   margin-bottom: 26px;
   padding-top: 57px;
 
-
   &::before {
     content: "";
     width: 46px;
@@ -21,11 +20,12 @@
     display: block;
   }
 
-  &--icon1 {
+  &--flower {
     padding-right: 63px;
     position: relative;
+
     &::before {
-      background-image: url("../img/icons/sprite.svg#icon1");
+      background-image: url("../img/icons/sprite.svg#flower");
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -34,10 +34,11 @@
     }
   }
 
-  &--icon2 {
+  &--style {
     position: relative;
+
     &::before {
-      background-image: url("../img/icons/sprite.svg#icon2");
+      background-image: url("../img/icons/sprite.svg#style");
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -46,10 +47,11 @@
     }
   }
 
-  &--icon3 {
+  &--heart {
     position: relative;
+
     &::before {
-      background-image: url("../img/icons/sprite.svg#icon3");
+      background-image: url("../img/icons/sprite.svg#heart");
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -59,11 +61,12 @@
     }
   }
 
-  &--icon4 {
+  &--ball {
     position: relative;
     padding-right: 35px;
+
     &::before {
-      background-image: url("../img/icons/sprite.svg#icon4");
+      background-image: url("../img/icons/sprite.svg#ball");
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -73,11 +76,12 @@
     }
   }
 
-  &--icon5 {
+  &--rocket {
     position: relative;
+
     &::before {
       width: 55px;
-      background-image: url("../img/icons/sprite.svg#icon5");
+      background-image: url("../img/icons/sprite.svg#rocket");
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -86,11 +90,12 @@
     }
   }
 
-  &--icon6 {
+  &--gift {
     position: relative;
     padding-right: 35px;
+
     &::before {
-      background-image: url("../img/icons/sprite.svg#icon6");
+      background-image: url("../img/icons/sprite.svg#gift");
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -106,7 +111,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
-    //grid-auto-flow: column;
     grid-template-areas:
       "a b"
       "c d"
@@ -117,25 +121,25 @@
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 54px;
-    &--icon1 {
+
+    &--flower {
       padding-right: 103px;
       grid-area: a;
     }
 
-
-    &--icon2 {
+    &--style {
       grid-area: c;
     }
 
-    &--icon3 {
+    &--heart {
       grid-area: e;
     }
 
-    &--icon4 {
+    &--ball {
       grid-area: b;
     }
 
-    &--icon6 {
+    &--gift {
       padding-right: 39px;
     }
   }
@@ -143,16 +147,17 @@
 
 @media (min-width: variables.$desktop-width) {
   .about-list__item {
-    padding-top: 56px;
-    &--icon1 {
+    padding-top: 57px;
+
+    &--flower {
       padding-right: 119px;
     }
 
-    &--icon4 {
+    &--ball {
       padding-right: 48px;
     }
 
-    &--icon6 {
+    &--gift {
       padding-right: 55px;
     }
   }

@@ -13,18 +13,25 @@
 
 .card-list__desc {
   margin: 0;
-  padding: 12px 0 12px 0;
+  padding: 10px 0 12px 0;
   border-bottom: 1px solid #ededed;
 }
 
 .card-list__term {
   border-bottom: 1px solid #ededed;
-  padding: 12px 0 12px 0;
+  padding: 10px 12px 12px 0;
 }
 
 
 @media (min-width: variables.$tablet-width) {
   .card-list {
     max-width: 292px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .card-list__term,
+  .card-list__desc {
+    padding-bottom: 13px;
   }
 }

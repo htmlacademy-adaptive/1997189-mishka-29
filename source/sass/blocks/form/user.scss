@@ -1,0 +1,69 @@
+@use "./common/variables.scss";
+
+.user {
+  border: none;
+  margin: 0;
+  padding: 0 30px;
+}
+
+.user__caption {
+  margin-bottom: 29px;
+}
+
+.user__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user__item {
+  margin-bottom: 22px;
+
+  &:last-child .user-item__input {
+    padding: 17px 10px 12px 0;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .user {
+    padding: 0 50px 10px;
+  }
+
+  .user__caption {
+    padding-top: 67px;
+  }
+
+  .user__wrapper {
+    display: grid;
+    grid-template-columns: 167px 1fr;
+  }
+
+  .user__list {
+    padding-top: 66px;
+  }
+
+  .user__item {
+    margin-bottom: 40px;
+  }
+
+  .user-item__name {
+    max-width: 100px;
+  }
+
+  .user__item:last-child .user-item__input {
+    padding: 3px 10px 13px 20px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .user__wrapper {
+    grid-template-columns: 115px 1fr;
+    max-width: 927px;
+    margin: 0 auto;
+  }
+
+  .user__list {
+    max-width: 698px;
+    padding-top: 66px;
+  }
+}

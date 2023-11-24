@@ -1,21 +1,21 @@
 @use "./common/variables.scss";
 
 .card {
-    padding: 31px 29px 36px;
-    position: relative;
+  padding: 31px 29px 36px;
+  position: relative;
 
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 24px;
-      background-image: url("../img/icons/sprite.svg#zigzag-line-desktop");
-      background-repeat: repeat-x;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/icons/sprite.svg#zigzag-line-desktop");
+    background-repeat: repeat-x;
     background-size: 100%;
     position: absolute;
     left: 0;
     bottom: -8px;
-    }
+  }
 }
 
 .card__caption {
@@ -27,7 +27,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .card__weekly-product {
@@ -35,7 +35,7 @@
 }
 
 .card__list {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .card__img-link {
@@ -43,14 +43,18 @@
 }
 
 .card__price {
-  margin: 0 auto 5px;
+  margin: 0 auto;
+}
+
+.card__button {
+  margin-bottom: 5px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 46px 50px 69px;
+    padding: 46px 50px 64px;
 
     &::after {
       bottom: -3px;
@@ -65,7 +69,7 @@
     justify-self: right;
     margin-right: 13px;
     margin-top: 5px;
-}
+  }
 
   .card__caption {
     grid-column: 1/-1;
@@ -78,7 +82,7 @@
     font-size: 17px;
     line-height: 30px;
     width: 299px;
-    margin-bottom: 34px;
+    margin-bottom: 39px;
   }
 
   .card__img-link {
@@ -90,16 +94,16 @@
 
   .card__price {
     margin: unset;
-    padding-top: 31px;
+    padding-top: 29px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .card {
-    grid-template-columns: 176px 1fr 525px;
+    grid-template-columns: 175px 1fr 525px;
     grid-template-rows: 61px minmax(93px, auto) auto auto;
-    padding-top: 75px;
-    padding-bottom: 94px;
+    padding-top: 72px;
+    padding-bottom: 88px;
     max-width: 1150px;
     margin: 0 auto;
 
@@ -109,7 +113,7 @@
   }
 
   .card__list {
-    margin-bottom: 108px;
+    margin-bottom: 110px;
     width: 298px;
   }
 
@@ -117,6 +121,8 @@
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: center;
+    margin-right: 12px;
+    margin-top: 8px;
   }
 
   .card__caption {
@@ -151,7 +157,6 @@
   }
 
   .card__about {
-    margin-bottom: 49px;
+    margin-bottom: 51px;
   }
 }
-

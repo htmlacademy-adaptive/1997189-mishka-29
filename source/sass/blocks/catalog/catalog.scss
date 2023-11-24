@@ -1,9 +1,5 @@
 @use "./common/variables.scss";
 
-.catalog {
-  //padding: 0 30px;
-}
-
 .catalog__list {
   list-style-type: none;
   padding: 0;
@@ -23,14 +19,10 @@
 }
 
 .catalog__video {
-  margin-bottom: 64px;
+  margin-bottom: 57px;
 }
 
 @media (min-width: variables.$tablet-width) {
-  .catalog__card {
-   // margin-bottom: 54px;
-  }
-
   .catalog__item {
     padding: 0 49px;
     margin-bottom: 52px;
@@ -41,6 +33,7 @@
     position: relative;
     padding-top: 30px;
     min-height: 167px;
+
     &::after {
       content: "";
       width: 100%;
@@ -58,14 +51,20 @@
 
 @media (min-width: variables.$desktop-width) {
   .catalog__wrapper {
+    padding-top: 28px;
     min-height: 191px;
-    margin-bottom: 120px;
+    margin-bottom: 118px;
 
     &::after {
       height: 34px;
       background-size: 100% 34px;
       bottom: -7px;
     }
+  }
+
+  .catalog__caption {
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .catalog__list {
@@ -79,6 +78,6 @@
 
   .catalog__item {
     padding: unset;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 }

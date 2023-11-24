@@ -1,0 +1,60 @@
+@use "./common/variables.scss";
+
+.color {
+  margin: 0;
+  padding: 0 30px 10px;
+  border: none;
+}
+
+.color__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.color__item.color__item {
+  margin-bottom: 23px;
+}
+
+.color__caption {
+  margin-bottom: 23px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .color {
+    background-color: #f1f1f1;
+    padding: 0 50px 29px;
+  }
+
+  .color__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .color__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+    padding-top: 50px;
+  }
+
+  .color__caption {
+    padding-top: 67px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .color {
+    padding-bottom: 30px;
+  }
+
+  .color__wrapper {
+    max-width: 927px;
+    margin: 0 auto;
+  }
+
+  .color__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 48px;
+  }
+}

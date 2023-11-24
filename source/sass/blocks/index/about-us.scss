@@ -9,19 +9,23 @@
 }
 
 @media (min-width: variables.$tablet-width) {
-.about-us {
-  padding: 55px 50px 28px;
-  max-width: 800px;
-}
+  .about-us {
+    padding: 57px 50px 27px;
+    max-width: 800px;
+  }
 
-.about-us__caption {
-  margin-bottom: 41px;
-}
+  .about-us__caption {
+    margin-bottom: 41px;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
   .about-us {
-    padding-top: 68px;
+    padding-top: 70px;
     padding-bottom: 34px;
+  }
+
+  .about-us__caption {
+    margin-bottom: 39px;
   }
 }

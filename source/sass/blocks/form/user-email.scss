@@ -1,0 +1,36 @@
+@use "./common/variables.scss";
+
+.user-email {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 21px;
+    display: block;
+    mask-image: url("../img/icons/sprite.svg#mail");
+    mask-repeat: no-repeat;
+    background-color: #000000;
+    opacity: 0.2;
+    position: absolute;
+    top: 21px;
+    right: 3px;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .user-email {
+    &::after {
+      top: 30px;
+      right: 22px;
+    }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .user-email {
+    &::after {
+      right: 4px;
+    }
+  }
+}
