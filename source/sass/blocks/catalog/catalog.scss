@@ -41,7 +41,7 @@
       display: block;
       background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: repeat-x;
-      background-size: 100% 24px;
+      background-size: 768px 24px;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -57,7 +57,7 @@
 
     &::after {
       height: 34px;
-      background-size: 100% 34px;
+      background-size: 1150px 34px;
       bottom: -7px;
     }
   }

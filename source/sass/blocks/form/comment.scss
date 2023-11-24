@@ -62,6 +62,7 @@
     grid-column: 2/3;
     margin-bottom: unset;
     margin-top: 11px;
+    text-align: right;
   }
 
   .comment__wrapper {
@@ -104,16 +105,21 @@
   }
 
   .comment__button-wrapper {
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
     padding-left: 62px;
     padding-right: 62px;
     grid-template-columns: 343px 1fr;
     column-gap: 168px;
+    text-align: unset;
   }
 
   .comment__button {
     margin-left: auto;
     width: 230px;
+  }
+
+  .comment__footnote {
+    text-align: left;
   }
 }
