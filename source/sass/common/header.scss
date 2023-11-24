@@ -1,0 +1,24 @@
+@use "./common/variables.scss";
+
+@media (max-width: variables.$mobile-width-only) {
+  .header__wrapper {
+    min-height: 82px;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .header {
+    overflow: hidden;
+  }
+
+  .header__wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .header__wrapper {
+    max-width: 1150px;
+  }
+}

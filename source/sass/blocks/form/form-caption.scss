@@ -1,0 +1,76 @@
+@use "./common/variables.scss";
+
+.form-caption {
+  color: variables.$color-primary;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 100%;
+  padding-left: unset;
+  padding-right: unset;
+  display: block;
+}
+
+.form-caption__text {
+  position: relative;
+  display: block;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #63d1bb;
+    position: absolute;
+    z-index: -1;
+    top: 6px;
+    left: 0;
+  }
+}
+
+.form-caption__row {
+  padding-right: 16px;
+  background-color: #ffffff;
+  position: relative;
+  display: inline-block;
+  max-width: 120px;
+  min-width: 60px;
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .form-caption {
+    width: 167px;
+  }
+
+  .form-caption__text {
+    padding-right: unset;
+    background-color: transparent;
+    width: 150px;
+
+    &::after {
+      display: none;
+    }
+
+    .form-caption__row {
+      background-color: transparent;
+    }
+
+    .user-contacts__caption & {
+      padding-top: 31px;
+    }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .form-caption {
+    padding-left: unset;
+    width: 113px;
+  }
+
+  .form-caption__text {
+    width: 80px;
+  }
+}

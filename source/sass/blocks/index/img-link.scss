@@ -1,0 +1,26 @@
+@use "./common/variables.scss";
+
+.img-link {
+  display: block;
+  height: 315px;
+  background-color: #f1f1f1;
+}
+
+.img-link__img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .img-link {
+    height: 404px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .img-link {
+    height: 636px;
+  }
+}

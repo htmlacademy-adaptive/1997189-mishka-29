@@ -1,0 +1,133 @@
+@use "./common/variables.scss";
+
+.user-contacts {
+  border: none;
+  margin: 0;
+  padding: 13px 30px 0;
+}
+
+.user-contacts__input {
+  border: none;
+  padding: 13px 45px 15px 0;
+  margin: 0;
+  border-bottom: 2px solid #000000;
+  width: 100%;
+  color: #444444;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: transparent;
+
+  &::placeholder {
+    font-size: 17px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  .user-email & {
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
+}
+
+.user-contacts__caption {
+  cursor: pointer;
+
+  &:hover .user-phone {
+    &::after {
+      background-color: #62d1ba;
+      opacity: 1;
+    }
+  }
+
+  &:hover .user-contacts__input {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:hover .user-email,
+  &:active .user-email {
+    &::after {
+      background-color: #62d1ba;
+      opacity: 1;
+    }
+  }
+
+  &:hover .user-contacts__input,
+  &:active .user-contacts__input,
+  &:focus .user-contacts__input,
+  &:focus-visible .user-contacts__input {
+    border-bottom: 2px solid #62d1ba;
+    outline: none;
+  }
+}
+
+.user-contacts__input-wrapper {
+  margin-bottom: 35px;
+  display: block;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .user-contacts {
+    background-color: #f1f1f1;
+    padding: 35px 50px 41px;
+  }
+
+  .user-contacts__caption {
+    display: flex;
+    width: 100%;
+    column-gap: 17px;
+  }
+
+  .user-contacts__input {
+    padding-left: 17px;
+    padding-right: 74px;
+    padding-top: 24px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+
+    .user-email & {
+      padding-top: 24px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .user-contacts__input-wrapper {
+    flex-grow: 1;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .user-contacts__wrapper {
+    max-width: 928px;
+    margin: 0 auto;
+  }
+
+  .user-contacts__caption {
+    column-gap: 33px;
+    max-width: 928px;
+    margin: 0 auto;
+  }
+
+  .user-contacts__input {
+    max-width: 700px;
+  }
+
+  .user-contacts__input-wrapper {
+    max-width: 700px;
+  }
+}

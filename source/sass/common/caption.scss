@@ -1,0 +1,63 @@
+@use "./common/variables.scss";
+
+.caption {
+  margin: 0;
+  font-weight: 700;
+  //padding: 0;
+  &--big {
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &--middle {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &--catalog {
+    font-size: 17px;
+    line-height: 24px;
+    //margin-bottom: 5px;
+    //text-align: center;
+  }
+
+  &--basket {
+    margin-top: -4px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .caption {
+    &--big {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &--middle {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &--catalog {
+      font-size: 20px;
+      line-height: 24px;
+      //text-align: left;
+    }
+
+    &--basket {
+      margin-top: -2px;
+    }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .caption {
+    &--big,
+    &--middle {
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+}

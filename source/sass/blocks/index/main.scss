@@ -1,0 +1,31 @@
+@use "./common/variables.scss";
+
+@media (min-width: variables.$tablet-width) {
+  .main__about-us {
+    margin: 0 auto;
+  }
+
+  .main__category-wrapper {
+    padding: 83px 50px 0;
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main__contacts {
+    margin: 0 auto 47px;
+  }
+
+  .main__category-wrapper {
+    overflow: hidden;
+
+    &::after {
+      height: 38px;
+      background-size: 109% 36px;
+      bottom: -23px;
+      left: 10px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@use "./common/variables.scss";
+
+.footer {
+  background-color: #f1f1f1;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .footer__wrapper {
+    padding: 51px 50px 58px;
+    display: grid;
+    grid-template-columns: 168px 250px 1fr;
+    align-items: start;
+  }
+
+  .footer__logo {
+    display: inherit;
+  }
+
+  .footer__list {
+    padding-top: 5px;
+  }
+
+  .footer__logo-academy {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .footer__wrapper {
+    max-width: 1150px;
+    padding-bottom: 58px;
+    margin: 0 auto;
+    grid-template-columns: 362px 249px 1fr;
+  }
+}

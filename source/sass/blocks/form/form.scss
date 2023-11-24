@@ -1,0 +1,21 @@
+@use "./common/variables.scss";
+
+.form__color {
+  margin-bottom: 11px;
+}
+
+.form__user {
+  margin-bottom: 11px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .form__type {
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .form__type {
+    margin: 0 auto;
+  }
+}

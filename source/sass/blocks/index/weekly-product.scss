@@ -1,0 +1,17 @@
+@use "./common/variables.scss";
+
+.weekly-product {
+  color: variables.$color-primary;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .weekly-product {
+    line-height: 17px;
+  }
+}
