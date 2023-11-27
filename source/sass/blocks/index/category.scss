@@ -11,7 +11,7 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background-mobile@2x.jpg");
     background-size: 320px 373px;
-    background-position: center top -18px;
+    background-position: center top -20px;
   }
 }
 
@@ -44,13 +44,13 @@
       background-repeat: repeat-x;
       position: absolute;
       left: 0;
-      bottom: -5px;
+      bottom: -6px;
       background-size: 768px 24px;
     }
   }
 
   .category__caption {
-    margin-bottom: 372px;
+    margin-bottom: 371px;
   }
 }
 
@@ -69,14 +69,14 @@
     &::after {
       height: 34px;
       left: 0;
-      bottom: -18px;
+      bottom: -16px;
       background-size: 1250px 34px;
       background-position-x: 12px;
     }
   }
 
   .category__caption {
-    margin-bottom: 356px;
+    margin-bottom: 354px;
   }
 
   .category__list {

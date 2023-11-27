@@ -44,7 +44,19 @@
   border-bottom: 1px solid #ededed;
   border-right: none;
   padding: 0;
-  background-position: center;
+  background-position: calc(50% - 3px) center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline-offset: 5px;
+  }
 }
 
 .slider__button-right {
@@ -60,12 +72,24 @@
   border-right: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
   padding: 0;
-  background-position: center;
+  background-position: calc(50% + 1px) center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline-offset: 5px;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
   .slider {
-    padding-bottom: 68px;
+    padding-bottom: 85px;
 
     &::after {
       bottom: -5px;
@@ -77,7 +101,7 @@
   }
 
   .slider__wrapper {
-    padding: 79px 50px 45px;
+    padding: 79px 50px 30px;
 
     background-image: url("../img/review-tablet.jpg");
     background-repeat: no-repeat;
@@ -98,19 +122,20 @@
 
   .slider__button-wrapper {
     display: flex;
-    column-gap: 37px;
+    column-gap: 27px;
     margin-bottom: unset;
     justify-content: center;
     position: absolute;
-    bottom: 34px;
+    bottom: 31px;
     right: 19px;
   }
 
   .slider__button-left,
   .slider__button-right {
-    width: 50px;
+    width: 55px;
     height: 26px;
     border: none;
+    background-position: unset;
   }
 }
 
@@ -124,7 +149,7 @@
   }
 
   .slider__wrapper {
-    padding: 79px 0 76px 174px;
+    padding: 78px 0 78px 174px;
   }
 
   .slider__caption {
@@ -132,6 +157,6 @@
   }
 
   .slider__button-wrapper {
-    bottom: 35px;
+    bottom: 33px;
   }
 }

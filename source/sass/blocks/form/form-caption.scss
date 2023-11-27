@@ -11,6 +11,7 @@
   padding-left: unset;
   padding-right: unset;
   display: block;
+  cursor: pointer;
 }
 
 .form-caption__text {
@@ -72,5 +73,9 @@
 
   .form-caption__text {
     width: 80px;
+
+    .user-contacts__caption & {
+      padding-top: 33px;
+    }
   }
 }

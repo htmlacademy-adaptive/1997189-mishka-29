@@ -1,9 +1,13 @@
+@use "./common/variables.scss";
+
 .button {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: block;
   text-align: center;
+  cursor: pointer;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   &--secondary {
     border: 2px solid #444444;
@@ -12,11 +16,38 @@
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-    padding: 13px 15px 15px;
+    padding: 14px 15px 14px;
   }
+
+  &:hover {
+    border: 2px solid #444444;
+    background-color: #444444;
+    color: #ffffff;
+    outline: none;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline-offset: 5px;
+  }
+
 
   &--form {
     font-size: 17px;
     padding: 16px 15px 12px;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .button {
+    &--secondary {
+      font-size: 17px;
+    }
   }
 }

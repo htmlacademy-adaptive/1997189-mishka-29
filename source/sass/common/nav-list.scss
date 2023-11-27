@@ -13,7 +13,8 @@
   display: inline-block;
   padding: 27px 48px 27px 30px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
 
@@ -21,8 +22,10 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
+  &:focus,
   &:focus-visible {
-    outline-offset: -1px;
+    outline-offset: -2px;
+    color: #000000;
   }
 }
 
@@ -43,13 +46,20 @@
     top: 32px;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     background-color: variables.$color-primary;
   }
 
   &:active::before {
     background-color: variables.$color-primary;
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    &::before {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
@@ -70,13 +80,22 @@
     top: 32px;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     background-color: variables.$color-primary;
   }
 
   &:active::before {
     background-color: variables.$color-primary;
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    color: #000000;
+
+    &::before {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
 

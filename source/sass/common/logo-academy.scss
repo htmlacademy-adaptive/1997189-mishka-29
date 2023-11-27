@@ -9,6 +9,25 @@
   padding-left: 38px;
   padding-right: 38px;
   align-items: flex-start;
+  color: inherit;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline-offset: -3px;
+  }
+}
+
+.logo-academy__icon {
+  fill: #63d1bb;
 }
 
 
@@ -17,22 +36,22 @@
   font-weight: 700;
   line-height: 18px;
   padding-top: 6px;
-  max-width: 120px;
+  max-width: 145px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .logo-academy {
     padding: unset;
-    column-gap: 34px;
+    column-gap: 26px;
+  }
+
+  .logo-academy__text {
+    padding-top: 8px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .logo-academy {
-    column-gap: 37px;
-  }
-
-  .logo-academy__text {
-    padding-top: 7px;
+    column-gap: 28px;
   }
 }

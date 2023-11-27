@@ -13,6 +13,7 @@
   padding-right: 30px;
 }
 
+
 @media (min-width: variables.$tablet-width) {
   .footer__wrapper {
     padding: 51px 50px 58px;
@@ -23,6 +24,15 @@
 
   .footer__logo {
     display: inherit;
+  }
+
+  .footer__logo-wrapper {
+    display: inline-block;
+    max-width: 103px;
+
+    &:focus-visible {
+      outline-offset: 5px;
+    }
   }
 
   .footer__list {

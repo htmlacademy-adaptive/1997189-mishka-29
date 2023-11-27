@@ -9,6 +9,10 @@
 .catalog__item {
   padding: 0 30px;
   margin-bottom: 30px;
+
+  &:focus-visible {
+    outline: 5px solid #000000;
+  }
 }
 
 .catalog__wrapper {
@@ -71,7 +75,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
-    column-gap: 51px;
+    column-gap: 50px;
     max-width: 1150px;
     margin: 0 auto;
   }

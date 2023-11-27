@@ -3,6 +3,8 @@
 .catalog-card {
   display: block;
   border: 1px solid #ededed;
+  cursor: pointer;
+  color: inherit;
 
   &:hover {
     border: 1px solid #ededed;
@@ -12,6 +14,12 @@
   &:active {
     border: 1px solid #ededed;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus-visible {
+    border: none;
+    box-shadow: none;
+    //outline-offset: 1px;
   }
 }
 
@@ -48,7 +56,7 @@
   display: block;
   position: relative;
 
-  &::after {
+  /*&::after {
     content: "";
     display: block;
     width: 20px;
@@ -59,7 +67,50 @@
     position: absolute;
     right: -2px;
     top: 23px;
+  }*/
+}
+
+/*.catalog-card__cart-wrapper {
+  display: block;
+
+  &:hover::after {
+    background-color: variables.$color-primary;
   }
+
+  &:active::after {
+    background-color: variables.$color-primary;
+    opacity: 0.3;
+  }
+}*/
+.catalog-card__cart {
+  border: none;
+  padding: 0;
+  display: block;
+  width: 20px;
+  height: 19px;
+  mask-image: url("../img/icons/sprite.svg#cart");
+  mask-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: -2px;
+  top: 23px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: variables.$color-primary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: variables.$color-primary;
+    opacity: 0.3;
+  }
+}
+
+.catalog-card__caption-wrapper {
+  color: inherit;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -89,14 +140,12 @@
     line-height: 24px;
   }
 
-  .catalog-card__cart-wrapper {
-    &::after {
-      right: -9px;
-    }
-  }
-
   .catalog-card__caption {
     margin-bottom: 5px;
+  }
+
+  .catalog-card__cart {
+    right: -7px;
   }
 }
 
