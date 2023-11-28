@@ -224,7 +224,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__logo-academy logo-academy" href="https://htmlacademy.ru">
+      <a class="footer__logo-academy logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="logo-academy__text">Разработано</span>
         <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -234,6 +234,23 @@
       </a>
     </div>
   </footer>
+  <div class="body__modal modal">
+    <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="get">
+      <h2 class="modal-form__caption">Добавить в&nbsp;корзину</h2>
+      <p class="modal-form__text">Выберите размер:</p>
+      <fieldset class="modal-form__group modal-group">
+        <div class="modal-group__wrapper">
+        <input class="modal-group__checkbox visually-hidden" type="checkbox" id="size-s" name="size-s" checked>
+        <label class="modal-group__label" for="size-s">s</label>
+        <input class="modal-group__checkbox visually-hidden" type="checkbox" id="size-m" name="size-m">
+        <label class="modal-group__label" for="size-m">m</label>
+        <input class="modal-group__checkbox visually-hidden" type="checkbox" id="size-l" name="size-l">
+        <label class="modal-group__label" for="size-l">l</label>
+      </div>
+      </fieldset>
+      <button class="modal-form__button button button--primary" type="submit">Добавить</button>
+    </form>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 

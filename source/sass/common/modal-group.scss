@@ -1,0 +1,62 @@
+@use "./common/variables.scss";
+
+.modal-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-group__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 7px;
+  justify-content: center;
+}
+
+.modal-group__label {
+  display: flex;
+  width: 82px;
+  height: 52px;
+  border: 2px solid rgba(69, 69, 69, 0.1);
+  cursor: pointer;
+  color: #444444;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  /* &::before {
+    content: "";
+    display: block;
+    width: 82px;
+    height: 52px;
+    border: 2px solid #63d1bb;
+  }*/
+  &:hover {
+    border: 2px solid rgba(69, 69, 69, 0.3);
+  }
+}
+
+.modal-group__checkbox:checked + .modal-group__label {
+  border: 2px solid #63d1bb;
+}
+
+.modal-group__checkbox:checked:active + .modal-group__label {
+  border-color: rgba(98, 208, 186, 0.5);
+}
+
+.modal-group__checkbox:checked:hover + .modal-group__label {
+  color: rgba(69, 69, 69, 0.3);
+}
+
+.modal-group__checkbox:checked:focus-visible + .modal-group__label {
+  outline: 1px solid #000000;
+  outline-offset: 2px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .modal-group__label {
+    width: 112px;
+  }
+}

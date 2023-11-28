@@ -30,7 +30,6 @@
   fill: #63d1bb;
 }
 
-
 .logo-academy__text {
   font-size: 19px;
   font-weight: 700;
@@ -43,6 +42,10 @@
   .logo-academy {
     padding: unset;
     column-gap: 26px;
+
+    &:focus-visible {
+      outline-offset: 5px;
+    }
   }
 
   .logo-academy__text {

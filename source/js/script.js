@@ -1,5 +1,9 @@
 const nav = document.querySelector('.nav');
 const menuButton = document.querySelector('.toggle');
+const modal = document.querySelector('.modal');
+const modalButton = document.querySelector('.card__button');
+const modalBtnCatalog = document.querySelector('.catalog-card__cart');
+const videoButton = document.querySelector('.video__button');
 
 nav.classList.add('nav--closed');
 menuButton.addEventListener('click',() => {
@@ -7,3 +11,31 @@ menuButton.addEventListener('click',() => {
   nav.classList.toggle('nav--closed');
   }
 );
+
+if(modalButton) {
+  modalButton.addEventListener('click',() => {
+    modal.classList.add('modal--opened');
+    }
+  );
+  }
+
+  if (modal) {
+  modal.addEventListener('click',() => {
+    modal.classList.remove('modal--opened');
+    }
+  );
+  }
+
+  if (modalBtnCatalog) {
+  modalBtnCatalog.addEventListener('click',() => {
+    modal.classList.add('modal--opened');
+    }
+  );
+  }
+
+  if(videoButton) {
+    videoButton.addEventListener('click',() => {
+      modal.classList.add('modal--opened');
+      }
+    );
+    }
