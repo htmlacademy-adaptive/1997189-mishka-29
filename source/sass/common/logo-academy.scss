@@ -11,6 +11,10 @@
   align-items: flex-start;
   color: inherit;
 
+  & svg {
+    fill: #63d1bb;
+  }
+
   &:hover svg {
     fill: #46c1ae;
   }
@@ -22,7 +26,12 @@
 
   &:focus,
   &:focus-visible {
+    outline: 1px solid #000000;
     outline-offset: -3px;
+  }
+
+  &:active {
+    outline: none;
   }
 }
 
@@ -41,7 +50,7 @@
 @media (min-width: variables.$tablet-width) {
   .logo-academy {
     padding: unset;
-    column-gap: 26px;
+    column-gap: 27px;
 
     &:focus-visible {
       outline-offset: 5px;
@@ -49,12 +58,17 @@
   }
 
   .logo-academy__text {
-    padding-top: 8px;
+    padding-top: 7px;
+    max-width: 180px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .logo-academy {
     column-gap: 28px;
+  }
+
+  .logo-academy__text {
+    padding-top: 8px;
   }
 }

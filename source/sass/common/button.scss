@@ -9,6 +9,21 @@
   cursor: pointer;
   font-family: "Open Sans", "Arial", sans-serif;
 
+  &--disabled,
+  &:disabled {
+    opacity: 0.1;
+    outline: none;
+    background-color: transparent;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      background-color: transparent;
+    }
+  }
+
   &--secondary {
     border: 2px solid #444444;
     color: #444444;
@@ -25,15 +40,17 @@
       outline: none;
     }
 
+    &:focus-visible,
+    &:focus {
+      outline: 1px solid #000000;
+      outline-offset: 5px;
+    }
+
     &:active {
       border: 2px solid #444444;
       background-color: #444444;
       color: rgba(255, 255, 255, 0.3);
       outline: none;
-    }
-
-    &:focus-visible {
-      outline-offset: 5px;
     }
   }
 
@@ -57,7 +74,9 @@
       color: rgba(255, 255, 255, 0.3);
     }
 
-    &:focus-visible {
+    &:focus-visible,
+    &:focus {
+      outline: 1px solid #000000;
       outline-offset: 5px;
     }
   }

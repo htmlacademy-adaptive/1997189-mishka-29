@@ -52,6 +52,12 @@
     outline: 1px solid #000000;
     outline-offset: 5px;
   }
+
+  &:disabled ~ .checkbox__label::before,
+  &:disabled ~ .checkbox__label::after {
+    opacity: 0.1;
+    cursor: none;
+  }
 }
 
 .checkbox__label::after {

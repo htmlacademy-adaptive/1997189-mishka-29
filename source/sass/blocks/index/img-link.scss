@@ -4,6 +4,11 @@
   display: block;
   height: 315px;
   background-color: #f1f1f1;
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid #000000;
+  }
 }
 
 .img-link__img {

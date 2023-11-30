@@ -41,6 +41,10 @@
     padding-top: 15px;
     padding-bottom: 13px;
   }
+
+  &:disabled {
+    opacity: 0.1;
+  }
 }
 
 .user-contacts__caption {
@@ -72,6 +76,11 @@
     border-bottom: 2px solid #62d1ba;
     outline: none;
   }
+
+  &--disabled .user-email::after,
+  &--disabled .user-phone::after {
+    opacity: 0.1;
+  }
 }
 
 .user-contacts__input-wrapper {
@@ -88,7 +97,7 @@
   .user-contacts__caption {
     display: flex;
     width: 100%;
-    column-gap: 17px;
+    column-gap: 47px;
   }
 
   .user-contacts__input {

@@ -34,6 +34,7 @@
     top: 11px;
     left: -48px;
   }
+
 }
 
 .radio__text {
@@ -55,6 +56,12 @@
   &:focus-visible + .radio__label::before {
     outline: 1px solid #000000;
     outline-offset: 5px;
+  }
+
+  &:disabled ~ .radio__label::before,
+  &:disabled ~ .radio__label::after {
+    opacity: 0.1;
+    cursor: none;
   }
 }
 

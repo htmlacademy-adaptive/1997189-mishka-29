@@ -5,13 +5,17 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body body">
   <header class="body__header header">
     <div class="header__wrapper">
-      <nav class="header__nav nav">
+      <nav class="header__nav nav"> <!--nav--opened открывает мобильное меню-->
         <button type="button" class="nav__button toggle">
           <span class="visually-hidden">Кнопка закрытия,открытия меню.</span>
         </button>
@@ -36,6 +40,7 @@
         <ul class="nav__list nav-list nav-list--cart">
           <li class="nav-list__item nav-list__item--search">
             <a class="nav-list__link nav-list__link--search" href="#">
+              <span class="visually-hidden">Кнопка поиска по сайту.</span>
               <span class="nav-list__row">Поиск по сайту</span>
             </a>
           </li>
@@ -143,10 +148,10 @@
             </cite>
           </blockquote>
           <div class="slider__button-wrapper">
-            <button class="button slider__button-left">
+            <button class="button slider__button-left" type="button">
               <span class="visually-hidden">Перелистнуть отзывы влево.</span>
             </button>
-            <button class="button slider__button-right">
+            <button class="button slider__button-right" type="button">
               <span class="visually-hidden">Перелистнуть отзывы вправо.</span>
             </button>
           </div>
@@ -221,7 +226,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__logo-academy logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__logo-academy logo-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="logo-academy__text">Разработано</span>
         <svg class="logo-academy__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -231,17 +236,17 @@
       </a>
     </div>
   </footer>
-  <div class="body__modal modal">
+  <div class="body__modal modal">  <!--modal--opened открывает модальное окно-->
     <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="get">
       <h2 class="modal-form__caption">Добавить в&nbsp;корзину</h2>
       <p class="modal-form__text">Выберите размер:</p>
       <fieldset class="modal-form__group modal-group">
         <div class="modal-group__wrapper">
-        <input class="modal-group__checkbox visually-hidden" type="checkbox" id="size-s" name="size-s" checked>
+        <input class="modal-group__radio visually-hidden" type="radio" id="size-s" name="size" value="size-s" checked>
         <label class="modal-group__label" for="size-s">s</label>
-        <input class="modal-group__checkbox visually-hidden" type="checkbox" id="size-m" name="size-m">
+        <input class="modal-group__radio visually-hidden" type="radio" id="size-m" name="size" value="size-m">
         <label class="modal-group__label" for="size-m">m</label>
-        <input class="modal-group__checkbox visually-hidden" type="checkbox" id="size-l" name="size-l">
+        <input class="modal-group__radio visually-hidden" type="radio" id="size-l" name="size" value="size-l">
         <label class="modal-group__label" for="size-l">l</label>
       </div>
       </fieldset>

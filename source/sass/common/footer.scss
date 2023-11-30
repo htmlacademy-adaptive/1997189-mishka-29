@@ -30,8 +30,14 @@
     display: inline-block;
     max-width: 103px;
 
+    &:focus,
     &:focus-visible {
+      outline: 1px solid #000000;
       outline-offset: 5px;
+    }
+
+    &:active {
+      outline: none;
     }
   }
 
@@ -49,6 +55,6 @@
     max-width: 1150px;
     padding-bottom: 58px;
     margin: 0 auto;
-    grid-template-columns: 362px 249px 1fr;
+    grid-template-columns: 362px 246px 1fr;
   }
 }

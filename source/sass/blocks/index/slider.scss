@@ -50,12 +50,19 @@
     opacity: 0.6;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:focus-visible,
+  &:focus {
+    outline: 1px solid #000000;
+    outline-offset: 5px;
   }
 
-  &:focus-visible {
-    outline-offset: 5px;
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.1;
   }
 }
 
@@ -78,12 +85,19 @@
     opacity: 0.6;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:focus-visible,
+  &:focus {
+    outline: 1px solid #000000;
+    outline-offset: 5px;
   }
 
-  &:focus-visible {
-    outline-offset: 5px;
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.1;
   }
 }
 

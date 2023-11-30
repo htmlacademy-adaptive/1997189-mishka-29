@@ -36,11 +36,14 @@
   &:focus {
     border: 2px solid #61d1bb;
     outline: none;
-    //box-shadow: 0 -2px 0 0 #000000 inset;
   }
 
   &:not(:placeholder-shown) {
     border: 2px solid #61d1bb;
+  }
+
+  &:disabled {
+    opacity: 0.1;
   }
 }
 

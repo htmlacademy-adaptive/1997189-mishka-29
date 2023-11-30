@@ -13,8 +13,8 @@
 
   &:focus-visible,
   &:focus {
-    // opacity: 0.3;
     outline-offset: 5px;
+    outline: 1px solid #000000;
   }
 }
 

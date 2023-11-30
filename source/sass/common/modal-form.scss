@@ -6,6 +6,7 @@
   min-height: 336px;
   padding: 28px 30px 46px;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  outline: 1px solid #c6c6c6;
 }
 
 .modal-form__button {
@@ -40,6 +41,7 @@
   .modal-form {
     width: 566px;
     min-height: 326px;
+    padding: 37px 30px 45px;
   }
 
   .modal-form__caption {

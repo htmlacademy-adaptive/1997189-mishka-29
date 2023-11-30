@@ -3,7 +3,7 @@ const menuButton = document.querySelector('.toggle');
 const modal = document.querySelector('.modal');
 const modalButton = document.querySelector('.card__button');
 const modalBtnCatalog = document.querySelector('.catalog-card__cart');
-const videoButton = document.querySelector('.video__button');
+console.log(modalBtnCatalog);
 
 nav.classList.add('nav--closed');
 menuButton.addEventListener('click',() => {
@@ -21,7 +21,7 @@ if(modalButton) {
 
   if (modal) {
   modal.addEventListener('click',() => {
-    modal.classList.remove('modal--opened');
+    //modal.classList.remove('modal--opened');
     }
   );
   }
@@ -32,10 +32,3 @@ if(modalButton) {
     }
   );
   }
-
-  if(videoButton) {
-    videoButton.addEventListener('click',() => {
-      modal.classList.add('modal--opened');
-      }
-    );
-    }

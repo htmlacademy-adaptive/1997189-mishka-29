@@ -37,16 +37,19 @@
     }
   }
 
+  &:focus-visible,
+  &:focus {
+    outline: 1px solid #000000;
+    outline-offset: 5px;
+  }
+
   &:active {
     color: #46c1ae;
+    outline: none;
 
     &::after {
       background-color: transparent;
     }
-  }
-
-  &:focus-visible {
-    outline-offset: 5px;
   }
 }
 
