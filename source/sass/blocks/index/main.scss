@@ -6,7 +6,7 @@
   }
 
   .main__category-wrapper {
-    padding: 84px 50px 0;
+    padding: 86px 50px 0;
     position: relative;
     max-width: 1150px;
     margin: 0 auto;
@@ -20,6 +20,7 @@
 
   .main__category-wrapper {
     overflow: hidden;
+    padding-top: 83px;
 
     &::after {
       height: 38px;
