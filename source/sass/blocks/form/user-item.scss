@@ -2,17 +2,40 @@
 
 .user-item__input {
   border: none;
-  padding: 17px 10px 13px 0;
+  padding: 11px 10px 12px 0;
   margin: 0;
   border-bottom: 2px solid #000000;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   width: 100%;
+  color: #444444;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
 
   &::placeholder {
-    color: rgba(0, 0, 0, 0.3);
     font-size: 17px;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  .user-item__name--disabled & {
+    opacity: 0.1;
+  }
+
+  &:disabled {
+    opacity: 0.1;
   }
 }
 
@@ -21,22 +44,27 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+
+  &--disabled {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
   .user-item {
     display: flex;
-    column-gap: 25px;
+    column-gap: 26px;
     align-items: flex-start;
   }
 
   .user-item__name {
     font-size: 19px;
     line-height: 18px;
+    padding-top: 9px;
   }
 
   .user-item__input {
-    padding: 3px 10px 13px 20px;
+    padding: 4px 10px 12px 15px;
 
     &::placeholder {
       font-size: 19px;

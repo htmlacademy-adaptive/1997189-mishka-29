@@ -11,9 +11,11 @@
 
 @media (max-width: variables.$mobile-width-only) {
   .nav--closed .toggle {
+    cursor: pointer;
     display: block;
     width: 21px;
-    height: 23px;
+    height: 15px;
+    z-index: 2;
 
     &:hover::before {
       opacity: 0.6;
@@ -35,12 +37,18 @@
       left: 0;
       box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
     }
+
+    &:focus-visible,
+    &:focus {
+      outline-offset: 5px;
+    }
   }
 
   .nav--opened .toggle {
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 29px;
+    z-index: 2;
 
     &::before,
     &::after {
@@ -55,13 +63,20 @@
     }
 
     &:hover::before,
-    &:hover::after {
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
       background-color: rgba(0, 0, 0, 0.6);
     }
 
     &:active::before,
     &:active::after {
       background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus-visible,
+    &:focus {
+      outline-offset: 5px;
     }
 
     &::before {

@@ -17,16 +17,16 @@
 }
 
 .user__item {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   &:last-child .user-item__input {
-    padding: 17px 10px 12px 0;
+    padding-top: 10px;
   }
 }
 
 @media (min-width: variables.$tablet-width) {
   .user {
-    padding: 0 50px 10px;
+    padding: 0 50px 18px;
   }
 
   .user__caption {
@@ -39,11 +39,11 @@
   }
 
   .user__list {
-    padding-top: 66px;
+    padding-top: 58px;
   }
 
   .user__item {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .user-item__name {
@@ -64,6 +64,10 @@
 
   .user__list {
     max-width: 698px;
-    padding-top: 66px;
+    padding-top: 58px;
+  }
+
+  .user__caption {
+    padding-top: 70px;
   }
 }

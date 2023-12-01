@@ -11,11 +11,8 @@
   padding-left: unset;
   padding-right: unset;
   display: block;
-}
-
-.form-caption__text {
+  cursor: pointer;
   position: relative;
-  display: block;
 
   &::after {
     content: "";
@@ -30,7 +27,7 @@
   }
 }
 
-.form-caption__row {
+.form-caption__text {
   padding-right: 16px;
   background-color: #ffffff;
   position: relative;
@@ -39,24 +36,19 @@
   min-width: 60px;
 }
 
-
 @media (min-width: variables.$tablet-width) {
   .form-caption {
     width: 167px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-caption__text {
     padding-right: unset;
     background-color: transparent;
     width: 150px;
-
-    &::after {
-      display: none;
-    }
-
-    .form-caption__row {
-      background-color: transparent;
-    }
 
     .user-contacts__caption & {
       padding-top: 31px;
@@ -72,5 +64,9 @@
 
   .form-caption__text {
     width: 80px;
+
+    .user-contacts__caption & {
+      padding-top: 33px;
+    }
   }
 }

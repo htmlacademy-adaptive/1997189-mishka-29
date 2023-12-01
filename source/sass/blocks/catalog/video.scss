@@ -7,17 +7,62 @@
 .video__wrapper {
   position: relative;
   margin-bottom: 35px;
+}
+
+.video__wrapper-button {
+  width: 101px;
+  height: 77px;
+  padding: 0;
+  border: 6px solid #ffffff;
+  background-color: #63d1bb;
+  border-radius: 20%;
+  position: absolute;
+  left: calc(50% - 51px);
+  top: calc(50% - 38px);
+  cursor: pointer;
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid #000000;
+  }
 
   &::before {
     content: "";
-    width: 100px;
-    height: 77px;
+    width: 30px;
+    height: 36px;
     display: block;
     background-image: url("../img/icons/sprite.svg#play");
+    background-size: 30px 37px;
     background-repeat: no-repeat;
     position: absolute;
-    left: calc(50% - 50px);
-    top: calc(50% - 38px);
+    left: calc(50% - 12px);
+    top: calc(50% - 19px);
+    background-position: 50% 50%;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    border: none;
+    outline: none;
+
+    &::before {
+      transform: scale(1.2);
+      transition: 0.5s;
+    }
+  }
+
+  &:active {
+    transform: scale(0.8);
+    transition: 0.5s;
+    border: none;
+    background-color: #d0f1eb;
+    outline: none;
+
+    &::before {
+      transform: scale(0.8);
+      transition: 0.5s;
+    }
   }
 }
 
@@ -25,7 +70,6 @@
   display: block;
   width: 100%;
 }
-
 
 .video__caption {
   margin-left: 91px;
@@ -88,7 +132,7 @@
   .video__link {
     display: grid;
     grid-template-columns: 1fr;
-    padding-bottom: 45px;
+    padding-bottom: 44px;
   }
 
   .video__caption {

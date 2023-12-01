@@ -26,6 +26,7 @@
 @media (min-width: variables.$tablet-width) {
   .card-list {
     max-width: 292px;
+    grid-template-columns: 97px 1fr;
   }
 }
 

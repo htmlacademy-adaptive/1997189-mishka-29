@@ -2,6 +2,20 @@
 
 .logo {
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline-offset: 5px;
+    outline: 1px solid #000000;
+  }
 }
 
 .logo__img {

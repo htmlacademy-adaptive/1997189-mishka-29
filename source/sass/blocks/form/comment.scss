@@ -15,6 +15,12 @@
   min-height: 142px;
   padding: 17px;
   margin-bottom: 13px;
+  border: 2px solid #444444;
+  color: #000000;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
 
   &::placeholder {
     color: #000000;
@@ -23,6 +29,21 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 18px;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:focus {
+    border: 2px solid #61d1bb;
+    outline: none;
+  }
+
+  &:not(:placeholder-shown) {
+    border: 2px solid #61d1bb;
+  }
+
+  &:disabled {
+    opacity: 0.1;
   }
 }
 
@@ -62,13 +83,14 @@
     grid-column: 2/3;
     margin-bottom: unset;
     margin-top: 11px;
+    text-align: right;
   }
 
   .comment__wrapper {
     display: grid;
-    grid-template-columns: 168px 1fr;
+    grid-template-columns: 167px 1fr;
     padding-top: 50px;
-    padding-bottom: 39px;
+    padding-bottom: 40px;
   }
 
   .comment__button-wrapper {
@@ -87,11 +109,12 @@
 
 @media (min-width: variables.$desktop-width) {
   .comment {
-    padding-bottom: 43px;
+    padding-bottom: 45px;
   }
 
   .comment__text {
     max-width: 700px;
+    padding: 15px;
   }
 
   .comment__wrapper {
@@ -104,16 +127,22 @@
   }
 
   .comment__button-wrapper {
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
     padding-left: 62px;
     padding-right: 62px;
     grid-template-columns: 343px 1fr;
     column-gap: 168px;
+    text-align: unset;
   }
 
   .comment__button {
     margin-left: auto;
     width: 230px;
+  }
+
+  .comment__footnote {
+    text-align: left;
+    margin-top: 13px;
   }
 }

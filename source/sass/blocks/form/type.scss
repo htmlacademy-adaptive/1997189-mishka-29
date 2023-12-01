@@ -50,11 +50,12 @@
 
 @media (min-width: variables.$desktop-width) {
   .type {
-    padding: 0 111px 20px;
+    padding: 0 111px 21px;
     max-width: 1150px;
   }
 
   .type__caption {
+    padding-top: 19px;
     width: 115px;
   }
 }

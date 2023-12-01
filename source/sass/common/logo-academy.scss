@@ -9,30 +9,66 @@
   padding-left: 38px;
   padding-right: 38px;
   align-items: flex-start;
+  color: inherit;
+
+  & svg {
+    fill: #63d1bb;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid #000000;
+    outline-offset: -3px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
+.logo-academy__icon {
+  fill: #63d1bb;
+}
 
 .logo-academy__text {
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
   padding-top: 6px;
-  max-width: 120px;
+  max-width: 145px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .logo-academy {
     padding: unset;
-    column-gap: 34px;
+    column-gap: 27px;
+
+    &:focus-visible {
+      outline-offset: 5px;
+    }
+  }
+
+  .logo-academy__text {
+    padding-top: 7px;
+    max-width: 180px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .logo-academy {
-    column-gap: 37px;
+    column-gap: 28px;
   }
 
   .logo-academy__text {
-    padding-top: 7px;
+    padding-top: 8px;
   }
 }

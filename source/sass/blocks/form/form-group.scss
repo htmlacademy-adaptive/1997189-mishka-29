@@ -13,7 +13,7 @@
 @media (min-width: variables.$tablet-width) {
   .form-group__wrapper {
     min-height: 167px;
-    padding-top: 27px;
+    padding-top: 30px;
     margin-bottom: 54px;
     position: relative;
 
@@ -24,7 +24,7 @@
       display: block;
       background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: repeat-x;
-      background-size: 100% 24px;
+      background-size: 768px 24px;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -32,7 +32,7 @@
   }
 
   .form-group__text {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 }
 
@@ -40,16 +40,17 @@
   .form-group__wrapper {
     min-height: 191px;
     margin-bottom: 106px;
+    padding-top: 27px;
 
     &::after {
       height: 34px;
-      background-size: 100% 34px;
+      background-size: 1150px 34px;
       bottom: -7px;
     }
   }
 
   .form-group__text {
-    margin: 0 auto 34px;
+    margin: 0 auto 33px;
   }
 
   .form-group__caption {

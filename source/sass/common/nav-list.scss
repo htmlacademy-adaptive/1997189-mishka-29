@@ -17,18 +17,27 @@
     color: rgba(0, 0, 0, 0.6);
   }
 
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
+  &:focus,
+  &:focus-visible {
+    outline-offset: -2px;
+    outline: 1px solid #000000;
+    color: #000000;
   }
 
-  &:focus-visible {
-    outline-offset: -1px;
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+    outline: none;
   }
 }
 
 .nav-list__link--search {
   padding: 27px 94px 28px 59px;
   position: relative;
+
+  &:focus-visible,
+  &:focus {
+    outline-offset: -3px;
+  }
 
   &::before {
     content: "";
@@ -43,13 +52,20 @@
     top: 32px;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     background-color: variables.$color-primary;
   }
 
   &:active::before {
     background-color: variables.$color-primary;
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    &::before {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
@@ -70,13 +86,22 @@
     top: 32px;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     background-color: variables.$color-primary;
   }
 
   &:active::before {
     background-color: variables.$color-primary;
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    color: #000000;
+
+    &::before {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
@@ -195,7 +220,7 @@
   }
 
   .nav-list__link {
-    padding: 24px 20px 28px 20px;
+    padding: 22px 20px 28px 20px;
 
     &--search {
       padding: 42px 40px;

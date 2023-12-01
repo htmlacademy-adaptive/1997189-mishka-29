@@ -3,7 +3,7 @@
 .caption {
   margin: 0;
   font-weight: 700;
-  //padding: 0;
+
   &--big {
     font-size: 27px;
     line-height: 30px;
@@ -18,8 +18,14 @@
   &--catalog {
     font-size: 17px;
     line-height: 24px;
-    //margin-bottom: 5px;
-    //text-align: center;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--basket {
@@ -43,7 +49,6 @@
     &--catalog {
       font-size: 20px;
       line-height: 24px;
-      //text-align: left;
     }
 
     &--basket {
@@ -58,6 +63,10 @@
     &--middle {
       font-size: 53px;
       line-height: 57px;
+    }
+
+    &--basket {
+      margin-top: unset;
     }
   }
 }

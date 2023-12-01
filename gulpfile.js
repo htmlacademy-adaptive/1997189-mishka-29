@@ -13,7 +13,6 @@ import { stacksvg } from "gulp-stacksvg";
 import svgo from 'gulp-svgmin';
 import { deleteAsync } from 'del';
 
-
 // Styles
 
 export const styles = () => {
@@ -27,7 +26,7 @@ export const styles = () => {
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
-}
+};
 
 //html
 export const html = () => {
@@ -94,7 +93,6 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 };
 
-
 // Server
 
 const server = (done) => {
@@ -108,7 +106,7 @@ const server = (done) => {
     browser: "chrome"
   });
   done();
-}
+};
 
 const reload = (done) => {
   browser.reload();
@@ -121,9 +119,8 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/js/*.js", gulp.series(scripts, reload));
-  //gulp.watch('source/*.html').on('change', browser.reload);
   gulp.watch("source/*.html", gulp.series(html, reload));
-}
+};
 
 
 export const build = gulp.series(

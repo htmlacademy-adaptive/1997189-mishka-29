@@ -1,9 +1,28 @@
+@use "./common/variables.scss";
+
 .button {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: block;
   text-align: center;
+  cursor: pointer;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  &--disabled,
+  &:disabled {
+    opacity: 0.1;
+    outline: none;
+    background-color: transparent;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      background-color: transparent;
+    }
+  }
 
   &--secondary {
     border: 2px solid #444444;
@@ -12,11 +31,66 @@
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-    padding: 13px 15px 15px;
+    padding: 14px 15px 14px;
+
+    &:hover {
+      border: 2px solid #444444;
+      background-color: #444444;
+      color: #ffffff;
+      outline: none;
+    }
+
+    &:focus-visible,
+    &:focus {
+      outline: 1px solid #000000;
+      outline-offset: 5px;
+    }
+
+    &:active {
+      border: 2px solid #444444;
+      background-color: #444444;
+      color: rgba(255, 255, 255, 0.3);
+      outline: none;
+    }
+  }
+
+  &--primary {
+    background-color: #62d0ba;
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    border: none;
+    padding: 18px;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+
+    &:active {
+      background-color: #59d5bc;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:focus-visible,
+    &:focus {
+      outline: 1px solid #000000;
+      outline-offset: 5px;
+    }
   }
 
   &--form {
     font-size: 17px;
     padding: 16px 15px 12px;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .button {
+    &--secondary {
+      font-size: 17px;
+    }
   }
 }
