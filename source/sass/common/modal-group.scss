@@ -7,16 +7,20 @@
 }
 
 .modal-group__wrapper {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   column-gap: 7px;
+  row-gap: 7px;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .modal-group__label {
   display: flex;
   width: 82px;
-  height: 52px;
+  min-height: 52px;
   border: 2px solid rgba(69, 69, 69, 0.1);
   cursor: pointer;
   color: #444444;

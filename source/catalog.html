@@ -251,14 +251,21 @@
       <h2 class="modal-form__caption">Добавить в&nbsp;корзину</h2>
       <p class="modal-form__text">Выберите размер:</p>
       <fieldset class="modal-form__group modal-group">
-        <div class="modal-group__wrapper">
-          <input class="modal-group__radio visually-hidden" type="radio" id="size-s" name="size" value="size-s" checked>
-          <label class="modal-group__label" for="size-s">s</label>
-          <input class="modal-group__radio visually-hidden" type="radio" id="size-m" name="size" value="size-m">
-          <label class="modal-group__label" for="size-m">m</label>
-          <input class="modal-group__radio visually-hidden" type="radio" id="size-l" name="size" value="size-l">
-          <label class="modal-group__label" for="size-l">l</label>
-        </div>
+        <ul class="modal-group__wrapper">
+          <li class="modal-group__item">
+            <input class="modal-group__radio visually-hidden" type="radio" id="size-s" name="size" value="size-s"
+              checked>
+            <label class="modal-group__label" for="size-s">s</label>
+          </li>
+          <li class="modal-group__item">
+            <input class="modal-group__radio visually-hidden" type="radio" id="size-m" name="size" value="size-m">
+            <label class="modal-group__label" for="size-m">m</label>
+          </li>
+          <li class="modal-group__item">
+            <input class="modal-group__radio visually-hidden" type="radio" id="size-l" name="size" value="size-l">
+            <label class="modal-group__label" for="size-l">l</label>
+          </li>
+        </ul>
       </fieldset>
       <button class="modal-form__button button button--primary" type="submit">Добавить</button>
     </form>

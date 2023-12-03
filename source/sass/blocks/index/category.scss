@@ -1,7 +1,7 @@
 @use "./common/variables.scss";
 
 .category {
-  background-image: url("../img/background-mobile.webp");
+  background-image: url("../img/background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top -20px;
   background-color: #f9f9f9;
@@ -9,7 +9,7 @@
   padding-top: 70px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/background-mobile@2x.webp");
+    background-image: url("../img/background-mobile@2x.jpg");
     background-size: 320px 373px;
     background-position: center top -20px;
   }
@@ -26,12 +26,12 @@
   .category {
     position: relative;
     min-height: 680px;
-    background-image: url("../img/background-tablet.webp");
+    background-image: url("../img/background-tablet.jpg");
     background-position: center top -71px;
     padding-top: unset;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-tablet@2x.webp");
+      background-image: url("../img/background-tablet@2x.jpg");
       background-size: 768px 746px;
     }
 
@@ -56,13 +56,13 @@
 
 @media (min-width: variables.$desktop-width) {
   .category {
-    background-image: url("../img/background-desktop.webp");
+    background-image: url("../img/background-desktop.jpg");
     background-position: center top -74px;
     padding-top: unset;
     min-height: 671px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-desktop@2x.webp");
+      background-image: url("../img/background-desktop@2x.jpg");
       background-size: 1150px 746px;
     }
 
