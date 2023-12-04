@@ -107,11 +107,10 @@
             srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x" width="334" height="404">
           <source type="image/webp" srcset="img/triple-set-mobile.webp 1x, img/triple-set-mobile@2x.webp 2x" width="260"
             height="315">
-
           <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x"
-            type="image/png" width="525" height="636">
+            type="image/jpg" width="525" height="636">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x"
-            type="image/png" width="334" height="404">
+            type="image/jpg" width="334" height="404">
           <img class="img-link__img" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
             width="260" height="315" alt="Набор из трех вязаных корзинок." loading="lazy">
         </picture>
@@ -192,9 +191,9 @@
                 height="454">
 
               <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"
-                type="image/png" width="527" height="457">
+                type="image/jpg" width="527" height="457">
               <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x"
-                type="image/png" width="768" height="457">
+                type="image/jpg" width="768" height="457">
               <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320"
                 height="454" alt="Адрес места на карте: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101"
                 loading="lazy">
@@ -247,14 +246,21 @@
       <h2 class="modal-form__caption">Добавить в&nbsp;корзину</h2>
       <p class="modal-form__text">Выберите размер:</p>
       <fieldset class="modal-form__group modal-group">
-        <div class="modal-group__wrapper">
-          <input class="modal-group__radio visually-hidden" type="radio" id="size-s" name="size" value="size-s" checked>
-          <label class="modal-group__label" for="size-s">s</label>
-          <input class="modal-group__radio visually-hidden" type="radio" id="size-m" name="size" value="size-m">
-          <label class="modal-group__label" for="size-m">m</label>
-          <input class="modal-group__radio visually-hidden" type="radio" id="size-l" name="size" value="size-l">
-          <label class="modal-group__label" for="size-l">l</label>
-        </div>
+        <ul class="modal-group__wrapper">
+          <li class="modal-group__item">
+            <input class="modal-group__radio visually-hidden" type="radio" id="size-s" name="size" value="size-s"
+              checked>
+            <label class="modal-group__label" for="size-s">s</label>
+          </li>
+          <li class="modal-group__item">
+            <input class="modal-group__radio visually-hidden" type="radio" id="size-m" name="size" value="size-m">
+            <label class="modal-group__label" for="size-m">m</label>
+          </li>
+          <li class="modal-group__item">
+            <input class="modal-group__radio visually-hidden" type="radio" id="size-l" name="size" value="size-l">
+            <label class="modal-group__label" for="size-l">l</label>
+          </li>
+        </ul>
       </fieldset>
       <button class="modal-form__button button button--primary" type="submit">Добавить</button>
     </form>
