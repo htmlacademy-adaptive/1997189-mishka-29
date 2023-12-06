@@ -10,6 +10,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  max-width: 450px;
 }
 
 .type__caption {
@@ -52,6 +53,10 @@
   .type {
     padding: 0 111px 21px;
     max-width: 1150px;
+  }
+
+  .type__list {
+    max-width: 670px;
   }
 
   .type__caption {

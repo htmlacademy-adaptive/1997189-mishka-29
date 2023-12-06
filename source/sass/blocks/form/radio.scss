@@ -10,6 +10,9 @@
   min-height: 26px;
   display: inline-block;
   cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
 
   &::before {
     content: "";
@@ -34,12 +37,6 @@
     top: 11px;
     left: -48px;
   }
-}
-
-.radio__text {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
 }
 
 .radio__input {
@@ -70,12 +67,10 @@
     padding-top: 14px;
   }
 
-  .radio__text {
+  .radio__label {
     font-size: 19px;
     font-weight: 700;
-  }
 
-  .radio__label {
     &::before {
       width: 50px;
       height: 49px;

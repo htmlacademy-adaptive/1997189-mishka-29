@@ -47,6 +47,10 @@
   }
 }
 
+.user-contacts__wrapper .form-caption:not(:first-child) {
+  column-gap: 20px;
+}
+
 .user-contacts__caption {
   cursor: pointer;
 
@@ -95,9 +99,12 @@
   }
 
   .user-contacts__caption {
-    display: flex;
-    width: 100%;
-    column-gap: 47px;
+    margin-top: 32px;
+  }
+
+  .user-contacts__wrapper {
+    display: grid;
+    grid-template-columns: 167px 1fr;
   }
 
   .user-contacts__input {
@@ -125,12 +132,13 @@
   .user-contacts__wrapper {
     max-width: 928px;
     margin: 0 auto;
+    grid-template-columns: 114px 1fr;
   }
 
   .user-contacts__caption {
     column-gap: 33px;
     max-width: 928px;
-    margin: 0 auto;
+    margin: 33px 0 auto;
   }
 
   .user-contacts__input {

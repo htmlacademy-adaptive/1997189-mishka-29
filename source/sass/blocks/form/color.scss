@@ -10,6 +10,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  max-width: 464px;
 }
 
 .color__item.color__item {
@@ -60,5 +61,6 @@
   .color__list {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 48px;
+    max-width: unset;
   }
 }
