@@ -7,12 +7,11 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-  width: 100%;
   padding-left: unset;
   padding-right: unset;
-  display: block;
   cursor: pointer;
-  position: relative;
+  display: grid;
+  grid-template-columns: 58px 1fr;
 
   &::after {
     content: "";
@@ -20,25 +19,15 @@
     height: 1px;
     display: block;
     background-color: #63d1bb;
-    position: absolute;
-    z-index: -1;
-    top: 6px;
-    left: 0;
+    margin-top: 7px;
   }
-}
-
-.form-caption__text {
-  padding-right: 16px;
-  background-color: #ffffff;
-  position: relative;
-  display: inline-block;
-  max-width: 120px;
-  min-width: 60px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .form-caption {
     width: 167px;
+    padding-right: 15px;
+    display: inline-block;
 
     &::after {
       display: none;
